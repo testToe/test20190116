@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ruT-QL-ctj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuSettingViewController-->
+        <scene sceneID="stA-u8-Kms">
+            <objects>
+                <viewController storyboardIdentifier="MenuSettingView" title="MenuSettingViewController" id="ruT-QL-ctj" customClass="MenuSettingViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DtA-NA-8Ql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPp-Sj-3LP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="582.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V17-0Z-MKM" userLabel="MainStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1644.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nZ8-hg-yHE" userLabel="DeviceSettingStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="856.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl3-KD-rah" userLabel="lblDeviceSettingTitle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                                        <color key="backgroundColor" red="0.43434289383561642" green="0.76051476883561642" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="装置設定">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="15" name=".HiraKakuInterface-W3"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" firstLineHeadIndent="10" minimumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HTh-oc-WK9" userLabel="DeviceSettingInnerStackView">
+                                                        <rect key="frame" x="0.0" y="40" width="337.5" height="816.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07X-WL-osk" userLabel="btnRelativePermittivity">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="比誘電率設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rB-1t-ex3" userLabel="btnSensitivity">
+                                                                <rect key="frame" x="0.0" y="37" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="感度設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBy-4f-Mjh" userLabel="btnViewRange">
+                                                                <rect key="frame" x="0.0" y="74" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示レンジ設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-EI-6Gy" userLabel="btnImageProcessing">
+                                                                <rect key="frame" x="0.0" y="111" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="画像処理設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nil-o9-2Us" userLabel="btnColor">
+                                                                <rect key="frame" x="0.0" y="148" width="337.5" height="53.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示カラー設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59X-zW-ybJ" userLabel="btnDeviceOrientation">
+                                                                <rect key="frame" x="0.0" y="208.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="装置向き設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKw-09-DeU" userLabel="btnUnit">
+                                                                <rect key="frame" x="0.0" y="245.5" width="337.5" height="53"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示単位設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP2-y9-qbD" userLabel="btnLocationNoti">
+                                                                <rect key="frame" x="0.0" y="305.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="鉄筋位置通知">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-73-U0g" userLabel="btnShallowFilter">
+                                                                <rect key="frame" x="0.0" y="342.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="浅部フィルター">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80Y-oj-wmM" userLabel="btnSound">
+                                                                <rect key="frame" x="0.0" y="379.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="サウンド">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rta-mh-UYU" userLabel="btnAutoSave">
+                                                                <rect key="frame" x="0.0" y="416.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="測定時の自動保存">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4k-PT-2W4" userLabel="btnBackProcess">
+                                                                <rect key="frame" x="0.0" y="453.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="バック処理">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZY-N1-Ii7" userLabel="btnAutoDetect">
+                                                                <rect key="frame" x="0.0" y="490.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="測定終了時の自動検出">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsa-rN-uVR" userLabel="btnCompanyName">
+                                                                <rect key="frame" x="0.0" y="527.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="会社名">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGr-F5-rNM" userLabel="btnUserName">
+                                                                <rect key="frame" x="0.0" y="564.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="使用者名">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xz-Nw-2IB" userLabel="btnLocation">
+                                                                <rect key="frame" x="0.0" y="601.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="現場名">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auL-4G-Naj" userLabel="btnRegion">
+                                                                <rect key="frame" x="0.0" y="638.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="測定部位">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFe-5C-atb" userLabel="btnMeasurementDir">
+                                                                <rect key="frame" x="0.0" y="675.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="測定方向">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9X-yS-OAX" userLabel="btnMaximumDistance">
+                                                                <rect key="frame" x="0.0" y="712.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="最大測定距離(m)">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0of-l4-yK5" userLabel="btnAModeView">
+                                                                <rect key="frame" x="0.0" y="749.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Aモード表示データ">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-EH-lYo" userLabel="btnGPSDataStorageTime">
+                                                                <rect key="frame" x="0.0" y="786.5" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="GPSデータ保持期間">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Nil-o9-2Us" firstAttribute="height" secondItem="HTh-oc-WK9" secondAttribute="height" multiplier="1.5:23" id="cra-Zv-C6d"/>
+                                                            <constraint firstItem="tKw-09-DeU" firstAttribute="height" secondItem="HTh-oc-WK9" secondAttribute="height" multiplier="1.5:23" id="psI-4C-WJj"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="HTh-oc-WK9" firstAttribute="leading" secondItem="nZ8-hg-yHE" secondAttribute="leading" id="3wI-GQ-DLH"/>
+                                                    <constraint firstItem="HTh-oc-WK9" firstAttribute="width" secondItem="nZ8-hg-yHE" secondAttribute="width" multiplier="4.5:5" id="AQV-qx-hLP"/>
+                                                    <constraint firstItem="dl3-KD-rah" firstAttribute="width" secondItem="nZ8-hg-yHE" secondAttribute="width" id="BQ8-3k-hAb"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ns0-ag-kgT" userLabel="PreferredSettingStackView">
+                                                <rect key="frame" x="0.0" y="876.5" width="375" height="218"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbd-8c-TAR" userLabel="lblPreferredSettingTitle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                                        <color key="backgroundColor" red="0.43434289380000002" green="0.76051476880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="表示優先設定">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="15" name=".HiraKakuInterface-W3"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" firstLineHeadIndent="10" minimumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="7VC-rw-MSD" userLabel="PreferredSettingInnerStackView">
+                                                        <rect key="frame" x="0.0" y="40" width="337.5" height="178"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGZ-rt-pKG" userLabel="btnRelativePermittivityPreferredSetting">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="比誘電率">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noy-cn-eGm" userLabel="btnSensitivityPreferredSetting">
+                                                                <rect key="frame" x="0.0" y="37" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="感度">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-5f-aOY" userLabel="btnViewRangePreferredSetting">
+                                                                <rect key="frame" x="0.0" y="74" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示レンジ">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-sx-sfX" userLabel="btnColorPreferredSetting">
+                                                                <rect key="frame" x="0.0" y="111" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示カラー">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dw-hf-3H2" userLabel="btnUnitPreferredSetting">
+                                                                <rect key="frame" x="0.0" y="148" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="表示単位">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7VC-rw-MSD" firstAttribute="leading" secondItem="Ns0-ag-kgT" secondAttribute="leading" id="J1e-qd-9V5"/>
+                                                    <constraint firstItem="Hbd-8c-TAR" firstAttribute="width" secondItem="Ns0-ag-kgT" secondAttribute="width" id="Swn-qR-e27"/>
+                                                    <constraint firstItem="7VC-rw-MSD" firstAttribute="width" secondItem="Ns0-ag-kgT" secondAttribute="width" multiplier="4.5:5" id="fgH-nx-rCZ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="VRo-F7-eIL" userLabel="SensorSettingStackView">
+                                                <rect key="frame" x="0.0" y="1114.5" width="375" height="292"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-0D-ZcP" userLabel="lblSensorSettingTitle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                                        <color key="backgroundColor" red="0.43434289380000002" green="0.76051476880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="センサー設定">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="15" name=".HiraKakuInterface-W3"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" firstLineHeadIndent="10" minimumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HFm-30-MU0" userLabel="SensorSettingInnerStackView">
+                                                        <rect key="frame" x="0.0" y="40" width="337.5" height="252"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-TN-Cr1" userLabel="btnMeasurementMode">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="測定方式設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxQ-ce-88v" userLabel="btnLED">
+                                                                <rect key="frame" x="0.0" y="37" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="LED設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSp-IA-unf" userLabel="btnDistanceCorrection">
+                                                                <rect key="frame" x="0.0" y="74" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="距離補正">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33K-Wl-Vsf" userLabel="btnChannel">
+                                                                <rect key="frame" x="0.0" y="111" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="チャネル設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2r-mJ-Qvy" userLabel="btnTire">
+                                                                <rect key="frame" x="0.0" y="148" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="タイヤ設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-jM-PYj" userLabel="btnMeasurementSpeed">
+                                                                <rect key="frame" x="0.0" y="185" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="探査速度設定">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVZ-hP-K7m" userLabel="btnFineMode">
+                                                                <rect key="frame" x="0.0" y="222" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="詳細探査">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="HFm-30-MU0" firstAttribute="width" secondItem="VRo-F7-eIL" secondAttribute="width" multiplier="4.5:5" id="cEx-WH-5ne"/>
+                                                    <constraint firstItem="fgm-0D-ZcP" firstAttribute="width" secondItem="VRo-F7-eIL" secondAttribute="width" id="gSW-MV-T0f"/>
+                                                    <constraint firstItem="HFm-30-MU0" firstAttribute="leading" secondItem="VRo-F7-eIL" secondAttribute="leading" id="ucV-q2-Roy"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="fV3-OQ-hVt" userLabel="OtherSettingStackView">
+                                                <rect key="frame" x="0.0" y="1426.5" width="375" height="218"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-e7-7X6" userLabel="lblOtherSettingTitle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                                        <color key="backgroundColor" red="0.43434289380000002" green="0.76051476880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="その他">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="15" name=".HiraKakuInterface-W3"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" firstLineHeadIndent="10" minimumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-FK-S9U" userLabel="OtherSettingInnerStackView">
+                                                        <rect key="frame" x="0.0" y="40" width="337.5" height="178"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-C6-ihZ" userLabel="btnSensorSelect">
+                                                                <rect key="frame" x="0.0" y="0.0" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="センサー選択">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JmE-2I-c6x" userLabel="btnVersion">
+                                                                <rect key="frame" x="0.0" y="37" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="バージョン管理">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID3-IA-eYg" userLabel="btnInitialSetting">
+                                                                <rect key="frame" x="0.0" y="74" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="初期設定に戻す">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWK-rx-9vx" userLabel="btnMaintenanceSensor">
+                                                                <rect key="frame" x="0.0" y="111" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="メンテナンス　センサー">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5k-wU-Duy" userLabel="btnMaintenanceDisplay">
+                                                                <rect key="frame" x="0.0" y="148" width="337.5" height="30"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="メンテナンス　表示器">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="7"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Mjp-FK-S9U" firstAttribute="width" secondItem="fV3-OQ-hVt" secondAttribute="width" multiplier="4.5:5" id="3vJ-69-34p"/>
+                                                    <constraint firstItem="W1n-e7-7X6" firstAttribute="width" secondItem="fV3-OQ-hVt" secondAttribute="width" id="YnI-6s-u8h"/>
+                                                    <constraint firstItem="Mjp-FK-S9U" firstAttribute="leading" secondItem="fV3-OQ-hVt" secondAttribute="leading" id="hAM-uh-xLl"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCA-uq-lUd" userLabel="lblRelativePermittivity">
+                                        <rect key="frame" x="303" y="45" width="24.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1深" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-8b-9fC" userLabel="lblSensitivity">
+                                        <rect key="frame" x="292" y="82" width="35.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標準" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-tu-IGy" userLabel="lblViewRange">
+                                        <rect key="frame" x="292.5" y="119" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQH-Oy-wBe" userLabel="lblImageProcessing">
+                                        <rect key="frame" x="292.5" y="156" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カラー1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKl-a6-e8K" userLabel="lblColorName">
+                                        <rect key="frame" x="271" y="193" width="56.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オフセット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmZ-JT-4pG" userLabel="lblColorType">
+                                        <rect key="frame" x="245.5" y="217" width="82" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距離:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-iT-U1A" userLabel="lblUnitDistance">
+                                        <rect key="frame" x="263" y="290.5" width="64.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深さ:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-uP-vSD" userLabel="lblUnitDepth">
+                                        <rect key="frame" x="263" y="314" width="64.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aqX-n0-63Q" userLabel="segctrlDeviceOrientation">
+                                        <rect key="frame" x="275.5" y="252" width="57" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="znB-nn-C9a"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="左"/>
+                                            <segment title="右"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jya-T6-beO" userLabel="segctrlLocationNoti">
+                                        <rect key="frame" x="253.5" y="349" width="79" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="lLu-4u-IJ3"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OFF"/>
+                                            <segment title="ON"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UxN-GN-IHN" userLabel="segctrlShallowFilter">
+                                        <rect key="frame" x="253.5" y="386" width="79" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="4MT-oS-9vU"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OFF"/>
+                                            <segment title="ON"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-Xb-pe3" userLabel="segctrlSound">
+                                        <rect key="frame" x="253.5" y="423" width="79" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Fze-O3-zuT"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OFF"/>
+                                            <segment title="ON"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IMl-TX-wRH" userLabel="segctrlAutoSave">
+                                        <rect key="frame" x="253.5" y="460" width="79" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Dbx-8t-1Wj"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OFF"/>
+                                            <segment title="ON"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均＋自動感度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vge-pd-Yjm" userLabel="lblBackProcess">
+                                        <rect key="frame" x="213" y="499" width="114.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先頭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH4-rd-x25" userLabel="lblAutoDetect">
+                                        <rect key="frame" x="294.5" y="536" width="33" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社名仮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maw-ra-FCY" userLabel="lblCompanyName">
+                                        <rect key="frame" x="262" y="573" width="65.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用者名仮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-Vh-zj8" userLabel="lblUserName">
+                                        <rect key="frame" x="245.5" y="610" width="82" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現場名仮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy3-lI-g3y" userLabel="lblLocation">
+                                        <rect key="frame" x="262" y="647" width="65.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="測定部位仮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmA-r5-gv2" userLabel="lblRegion">
+                                        <rect key="frame" x="245.5" y="684" width="82" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上むきに測定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzk-YN-Mni" userLabel="lblMeasurementDir">
+                                        <rect key="frame" x="229.5" y="721" width="98" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="無制限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaH-ix-LJg" userLabel="lblMaximumDistance">
+                                        <rect key="frame" x="278.5" y="758" width="49" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bro-Vx-TzP" userLabel="segctrlAModeView">
+                                        <rect key="frame" x="249.5" y="793" width="83" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="roa-RX-xAT"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="最新"/>
+                                            <segment title="固定"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="制限なし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1q-Ot-o6J" userLabel="lblGPSDataStorageTime">
+                                        <rect key="frame" x="262" y="832" width="65.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Nj-YP-yGy" userLabel="segctrlRelativePermittivityPreferSetting">
+                                        <rect key="frame" x="195.5" y="920" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="bqw-zs-T6L"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="装置"/>
+                                            <segment title="ファイル"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxD-9y-qt8" userLabel="segctrlSensitivityPreferSetting">
+                                        <rect key="frame" x="195.5" y="957" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="t16-3J-aYW"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="装置"/>
+                                            <segment title="ファイル"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kAp-mb-nkl" userLabel="segctrlViewRangePreferSetting">
+                                        <rect key="frame" x="195.5" y="994" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="MB0-0u-E0b"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="装置"/>
+                                            <segment title="ファイル"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-up-Scx" userLabel="segctrlColorPreferSetting">
+                                        <rect key="frame" x="195.5" y="1031" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Dx2-o9-P1V"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="装置"/>
+                                            <segment title="ファイル"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-Jx-7A1" userLabel="segctrlUnitPreferSetting">
+                                        <rect key="frame" x="195.5" y="1068" width="137" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="FQ1-J9-0l4"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="装置"/>
+                                            <segment title="ファイル"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F60-17-Dwq" userLabel="segctrlMeasurementMode">
+                                        <rect key="frame" x="249.5" y="1158" width="83" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="83h-zB-9zW"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="時間"/>
+                                            <segment title="距離"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e4x-UV-5k4" userLabel="segctrlLED">
+                                        <rect key="frame" x="253.5" y="1195" width="79" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="fz1-wk-Gaj"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OFF"/>
+                                            <segment title="ON"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWu-0y-mN6" userLabel="lblDistanceCorrection">
+                                        <rect key="frame" x="317.5" y="1234" width="10" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-tk-mFW" userLabel="lblChannel">
+                                        <rect key="frame" x="317.5" y="1271" width="10" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u8j-85-e67" userLabel="segctrlTire">
+                                        <rect key="frame" x="249.5" y="1306" width="83" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="fEa-dg-zWd"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="標準"/>
+                                            <segment title="大型"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標準" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-vH-Qmb" userLabel="lblMeasurementSpeed">
+                                        <rect key="frame" x="294.5" y="1345" width="33" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標準" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sx8-hu-k9g" userLabel="lblFineMode">
+                                        <rect key="frame" x="294.5" y="1382" width="33" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SENSOR-QA003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc2-10-ana" userLabel="lblSelectedSensorID">
+                                        <rect key="frame" x="206.5" y="1472" width="121" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="maw-ra-FCY" firstAttribute="centerY" secondItem="vsa-rN-uVR" secondAttribute="centerY" id="29c-Fb-Emv"/>
+                                    <constraint firstAttribute="trailing" secondItem="V17-0Z-MKM" secondAttribute="trailing" id="2VC-xy-003"/>
+                                    <constraint firstItem="2vn-up-Scx" firstAttribute="centerY" secondItem="KDM-sx-sfX" secondAttribute="centerY" id="3N4-eI-EvE"/>
+                                    <constraint firstItem="HaH-ix-LJg" firstAttribute="centerY" secondItem="u9X-yS-OAX" secondAttribute="centerY" id="4Ql-gH-6cm"/>
+                                    <constraint firstItem="2vn-up-Scx" firstAttribute="trailing" secondItem="KDM-sx-sfX" secondAttribute="trailing" constant="-5" id="539-aY-84j"/>
+                                    <constraint firstItem="V17-0Z-MKM" firstAttribute="leading" secondItem="TPp-Sj-3LP" secondAttribute="leading" id="54c-9g-Zff"/>
+                                    <constraint firstItem="TWu-0y-mN6" firstAttribute="centerY" secondItem="HSp-IA-unf" secondAttribute="centerY" id="5Lv-Zo-Y43"/>
+                                    <constraint firstItem="e4x-UV-5k4" firstAttribute="trailing" secondItem="sxQ-ce-88v" secondAttribute="trailing" constant="-5" id="5lq-i3-kPb"/>
+                                    <constraint firstItem="Vge-pd-Yjm" firstAttribute="trailing" secondItem="C4k-PT-2W4" secondAttribute="trailing" constant="-10" id="7AF-k0-jqL"/>
+                                    <constraint firstItem="hnm-tu-IGy" firstAttribute="centerY" secondItem="bBy-4f-Mjh" secondAttribute="centerY" id="7Es-0P-fpd"/>
+                                    <constraint firstItem="3Nj-YP-yGy" firstAttribute="trailing" secondItem="sGZ-rt-pKG" secondAttribute="trailing" constant="-5" id="87p-0r-Cdw"/>
+                                    <constraint firstItem="jya-T6-beO" firstAttribute="centerY" secondItem="mP2-y9-qbD" secondAttribute="centerY" id="9HG-5p-A6o"/>
+                                    <constraint firstItem="7AJ-vH-Qmb" firstAttribute="centerY" secondItem="cEO-jM-PYj" secondAttribute="centerY" id="BJv-gl-18h"/>
+                                    <constraint firstItem="Obm-Xb-pe3" firstAttribute="trailing" secondItem="80Y-oj-wmM" secondAttribute="trailing" constant="-5" id="G4r-4f-PgD"/>
+                                    <constraint firstItem="Vge-pd-Yjm" firstAttribute="centerY" secondItem="C4k-PT-2W4" secondAttribute="centerY" id="GYD-kt-Z34"/>
+                                    <constraint firstItem="kAp-mb-nkl" firstAttribute="centerY" secondItem="Coe-5f-aOY" secondAttribute="centerY" id="Gc4-rF-nQl"/>
+                                    <constraint firstItem="Obm-Xb-pe3" firstAttribute="centerY" secondItem="80Y-oj-wmM" secondAttribute="centerY" id="H4t-3w-eq0"/>
+                                    <constraint firstItem="eCA-uq-lUd" firstAttribute="trailing" secondItem="07X-WL-osk" secondAttribute="trailing" constant="-10" id="HqI-mx-PTw"/>
+                                    <constraint firstItem="u8j-85-e67" firstAttribute="centerY" secondItem="k2r-mJ-Qvy" secondAttribute="centerY" id="IJD-dl-lEC"/>
+                                    <constraint firstItem="IMl-TX-wRH" firstAttribute="centerY" secondItem="rta-mh-UYU" secondAttribute="centerY" id="J8r-sc-acj"/>
+                                    <constraint firstItem="sx8-hu-k9g" firstAttribute="trailing" secondItem="sVZ-hP-K7m" secondAttribute="trailing" constant="-10" id="Lh7-mr-QC8"/>
+                                    <constraint firstItem="eCs-tk-mFW" firstAttribute="trailing" secondItem="33K-Wl-Vsf" secondAttribute="trailing" constant="-10" id="Mql-qW-rGj"/>
+                                    <constraint firstItem="maw-ra-FCY" firstAttribute="trailing" secondItem="vsa-rN-uVR" secondAttribute="trailing" constant="-10" id="N32-DI-XFR"/>
+                                    <constraint firstItem="UxN-GN-IHN" firstAttribute="trailing" secondItem="kEk-73-U0g" secondAttribute="trailing" constant="-5" id="NpJ-d4-oiy"/>
+                                    <constraint firstItem="Tck-Jx-7A1" firstAttribute="trailing" secondItem="4dw-hf-3H2" secondAttribute="trailing" constant="-5" id="OgE-aV-9pX"/>
+                                    <constraint firstItem="TWu-0y-mN6" firstAttribute="trailing" secondItem="HSp-IA-unf" secondAttribute="trailing" constant="-10" id="Q56-AC-h9y"/>
+                                    <constraint firstItem="u8j-85-e67" firstAttribute="trailing" secondItem="k2r-mJ-Qvy" secondAttribute="trailing" constant="-5" id="QTP-39-jSC"/>
+                                    <constraint firstItem="V17-0Z-MKM" firstAttribute="top" secondItem="TPp-Sj-3LP" secondAttribute="top" id="QfB-T9-guu"/>
+                                    <constraint firstItem="HaH-ix-LJg" firstAttribute="trailing" secondItem="u9X-yS-OAX" secondAttribute="trailing" constant="-10" id="RLJ-Df-Oza"/>
+                                    <constraint firstItem="dy3-lI-g3y" firstAttribute="trailing" secondItem="9Xz-Nw-2IB" secondAttribute="trailing" constant="-10" id="SH2-Y6-MoN"/>
+                                    <constraint firstItem="6vg-8b-9fC" firstAttribute="centerY" secondItem="0rB-1t-ex3" secondAttribute="centerY" id="SzO-Li-pTu"/>
+                                    <constraint firstAttribute="bottom" secondItem="V17-0Z-MKM" secondAttribute="bottom" id="Td9-A7-P71"/>
+                                    <constraint firstItem="Zsj-Vh-zj8" firstAttribute="trailing" secondItem="zGr-F5-rNM" secondAttribute="trailing" constant="-10" id="UHS-K0-5oU"/>
+                                    <constraint firstItem="3Nj-YP-yGy" firstAttribute="centerY" secondItem="sGZ-rt-pKG" secondAttribute="centerY" id="V3c-AA-cYt"/>
+                                    <constraint firstItem="7AJ-vH-Qmb" firstAttribute="trailing" secondItem="cEO-jM-PYj" secondAttribute="trailing" constant="-10" id="Whm-c5-N5d"/>
+                                    <constraint firstItem="eCA-uq-lUd" firstAttribute="centerY" secondItem="07X-WL-osk" secondAttribute="centerY" id="XFD-rg-BRY"/>
+                                    <constraint firstItem="dKl-a6-e8K" firstAttribute="trailing" secondItem="Nil-o9-2Us" secondAttribute="trailing" constant="-10" id="YGg-3Q-ua8"/>
+                                    <constraint firstItem="IMl-TX-wRH" firstAttribute="trailing" secondItem="rta-mh-UYU" secondAttribute="trailing" constant="-5" id="Ya5-Os-1pG"/>
+                                    <constraint firstItem="hnm-tu-IGy" firstAttribute="trailing" secondItem="bBy-4f-Mjh" secondAttribute="trailing" constant="-10" id="ZMQ-bx-pS3"/>
+                                    <constraint firstItem="dy3-lI-g3y" firstAttribute="centerY" secondItem="9Xz-Nw-2IB" secondAttribute="centerY" id="aRs-IF-IJl"/>
+                                    <constraint firstItem="qmA-r5-gv2" firstAttribute="trailing" secondItem="auL-4G-Naj" secondAttribute="trailing" constant="-10" id="afH-jp-BHc"/>
+                                    <constraint firstItem="LPb-iT-U1A" firstAttribute="trailing" secondItem="tKw-09-DeU" secondAttribute="trailing" constant="-10" id="bsx-8E-2bs"/>
+                                    <constraint firstItem="UxN-GN-IHN" firstAttribute="centerY" secondItem="kEk-73-U0g" secondAttribute="centerY" id="chB-Xw-4IX"/>
+                                    <constraint firstItem="LPb-iT-U1A" firstAttribute="top" secondItem="tKw-09-DeU" secondAttribute="top" constant="5" id="dVa-6B-ZOc"/>
+                                    <constraint firstItem="oQH-Oy-wBe" firstAttribute="centerY" secondItem="56x-EI-6Gy" secondAttribute="centerY" id="dlW-RB-zhI"/>
+                                    <constraint firstItem="Zsj-Vh-zj8" firstAttribute="centerY" secondItem="zGr-F5-rNM" secondAttribute="centerY" id="eXt-X6-tTf"/>
+                                    <constraint firstItem="oQH-Oy-wBe" firstAttribute="trailing" secondItem="56x-EI-6Gy" secondAttribute="trailing" constant="-10" id="gsl-4k-odt"/>
+                                    <constraint firstItem="bH4-rd-x25" firstAttribute="trailing" secondItem="fZY-N1-Ii7" secondAttribute="trailing" constant="-10" id="hNB-oK-59k"/>
+                                    <constraint firstItem="eCs-tk-mFW" firstAttribute="centerY" secondItem="33K-Wl-Vsf" secondAttribute="centerY" id="iCu-dJ-P04"/>
+                                    <constraint firstItem="qmA-r5-gv2" firstAttribute="centerY" secondItem="auL-4G-Naj" secondAttribute="centerY" id="in5-K5-eRx"/>
+                                    <constraint firstItem="sx8-hu-k9g" firstAttribute="centerY" secondItem="sVZ-hP-K7m" secondAttribute="centerY" id="jdd-m7-wej"/>
+                                    <constraint firstItem="V17-0Z-MKM" firstAttribute="width" secondItem="TPp-Sj-3LP" secondAttribute="width" id="kMI-Lm-wI2"/>
+                                    <constraint firstItem="e4x-UV-5k4" firstAttribute="centerY" secondItem="sxQ-ce-88v" secondAttribute="centerY" id="kqg-gN-ddV"/>
+                                    <constraint firstItem="wc2-10-ana" firstAttribute="trailing" secondItem="Ebl-C6-ihZ" secondAttribute="trailing" constant="-10" id="lOw-e1-3nm"/>
+                                    <constraint firstItem="F60-17-Dwq" firstAttribute="trailing" secondItem="BfJ-TN-Cr1" secondAttribute="trailing" constant="-5" id="lZg-y6-NDZ"/>
+                                    <constraint firstItem="wmZ-JT-4pG" firstAttribute="trailing" secondItem="Nil-o9-2Us" secondAttribute="trailing" constant="-10" id="moz-W5-TyS"/>
+                                    <constraint firstItem="kAp-mb-nkl" firstAttribute="trailing" secondItem="Coe-5f-aOY" secondAttribute="trailing" constant="-5" id="mvh-5z-6mH"/>
+                                    <constraint firstItem="Yts-uP-vSD" firstAttribute="trailing" secondItem="tKw-09-DeU" secondAttribute="trailing" constant="-10" id="pm6-xa-u44"/>
+                                    <constraint firstItem="Bro-Vx-TzP" firstAttribute="centerY" secondItem="0of-l4-yK5" secondAttribute="centerY" id="qFI-Uv-i7Z"/>
+                                    <constraint firstItem="D1q-Ot-o6J" firstAttribute="centerY" secondItem="eQE-EH-lYo" secondAttribute="centerY" id="qpk-rL-BP0"/>
+                                    <constraint firstItem="Hzk-YN-Mni" firstAttribute="trailing" secondItem="KFe-5C-atb" secondAttribute="trailing" constant="-10" id="qr4-cw-jzB"/>
+                                    <constraint firstItem="wxD-9y-qt8" firstAttribute="trailing" secondItem="Noy-cn-eGm" secondAttribute="trailing" constant="-5" id="qsm-ZP-c4r"/>
+                                    <constraint firstItem="aqX-n0-63Q" firstAttribute="centerY" secondItem="59X-zW-ybJ" secondAttribute="centerY" id="qtg-NZ-Ypt"/>
+                                    <constraint firstItem="wc2-10-ana" firstAttribute="centerY" secondItem="Ebl-C6-ihZ" secondAttribute="centerY" id="rQj-Ir-TB8"/>
+                                    <constraint firstItem="Tck-Jx-7A1" firstAttribute="centerY" secondItem="4dw-hf-3H2" secondAttribute="centerY" id="rbv-HW-A0R"/>
+                                    <constraint firstItem="wmZ-JT-4pG" firstAttribute="bottom" secondItem="Nil-o9-2Us" secondAttribute="bottom" constant="-5" id="s7n-lj-cNZ"/>
+                                    <constraint firstItem="aqX-n0-63Q" firstAttribute="trailing" secondItem="59X-zW-ybJ" secondAttribute="trailing" constant="-5" id="sGk-ie-dhO"/>
+                                    <constraint firstItem="6vg-8b-9fC" firstAttribute="trailing" secondItem="0rB-1t-ex3" secondAttribute="trailing" constant="-10" id="syt-Dl-gDV"/>
+                                    <constraint firstItem="D1q-Ot-o6J" firstAttribute="trailing" secondItem="eQE-EH-lYo" secondAttribute="trailing" constant="-10" id="tFR-jX-ViT"/>
+                                    <constraint firstItem="wxD-9y-qt8" firstAttribute="centerY" secondItem="Noy-cn-eGm" secondAttribute="centerY" id="tXc-ab-E70"/>
+                                    <constraint firstItem="jya-T6-beO" firstAttribute="trailing" secondItem="mP2-y9-qbD" secondAttribute="trailing" constant="-5" id="vaG-AS-Mlf"/>
+                                    <constraint firstItem="Yts-uP-vSD" firstAttribute="bottom" secondItem="tKw-09-DeU" secondAttribute="bottom" constant="-5" id="vkT-uL-XPy"/>
+                                    <constraint firstItem="Bro-Vx-TzP" firstAttribute="trailing" secondItem="0of-l4-yK5" secondAttribute="trailing" constant="-5" id="w0F-XM-rIw"/>
+                                    <constraint firstItem="dKl-a6-e8K" firstAttribute="top" secondItem="Nil-o9-2Us" secondAttribute="top" constant="5" id="wZb-SF-blr"/>
+                                    <constraint firstItem="F60-17-Dwq" firstAttribute="centerY" secondItem="BfJ-TN-Cr1" secondAttribute="centerY" id="wvr-Eg-Ggv"/>
+                                    <constraint firstItem="bH4-rd-x25" firstAttribute="centerY" secondItem="fZY-N1-Ii7" secondAttribute="centerY" id="y89-cv-F7h"/>
+                                    <constraint firstItem="Hzk-YN-Mni" firstAttribute="centerY" secondItem="KFe-5C-atb" secondAttribute="centerY" id="zpa-ew-sI2"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-Fb-9wS" userLabel="btnReturn">
+                                <rect key="frame" x="117.5" y="607.5" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="b4h-6w-rsT"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="メイン画面に戻る">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnReturnTap:" destination="ruT-QL-ctj" eventType="touchUpInside" id="SGy-KQ-OeG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-2O-OGT" userLabel="FooterLeftView" customClass="MainViewFooterLeft" customModule="keisoku_njj200" customModuleProvider="target">
+                                <rect key="frame" x="5" y="642.5" width="50" height="24.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z72-Pn-hGE" userLabel="FooterRightView" customClass="MainViewFooterRight" customModule="keisoku_njj200" customModuleProvider="target">
+                                <rect key="frame" x="320" y="642.5" width="50" height="24.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="LbB-Fb-9wS" firstAttribute="centerX" secondItem="DtA-NA-8Ql" secondAttribute="centerX" id="2WG-T4-Lfs"/>
+                            <constraint firstItem="cZe-gO-snc" firstAttribute="trailing" secondItem="TPp-Sj-3LP" secondAttribute="trailing" id="8nw-AC-Kz6"/>
+                            <constraint firstItem="TPp-Sj-3LP" firstAttribute="top" secondItem="cZe-gO-snc" secondAttribute="top" id="ElR-A0-Acm"/>
+                            <constraint firstItem="Bnu-2O-OGT" firstAttribute="height" secondItem="DtA-NA-8Ql" secondAttribute="height" multiplier="1:27.5" id="HY6-3t-IhN"/>
+                            <constraint firstItem="Bnu-2O-OGT" firstAttribute="top" secondItem="LbB-Fb-9wS" secondAttribute="bottom" constant="5" id="JWv-9r-cSy"/>
+                            <constraint firstItem="Bnu-2O-OGT" firstAttribute="leading" secondItem="cZe-gO-snc" secondAttribute="leading" constant="5" id="Vrk-Wj-Zwx"/>
+                            <constraint firstItem="Bnu-2O-OGT" firstAttribute="width" secondItem="DtA-NA-8Ql" secondAttribute="width" multiplier="1:7.5" id="ZUb-sN-ykh"/>
+                            <constraint firstItem="z72-Pn-hGE" firstAttribute="height" secondItem="DtA-NA-8Ql" secondAttribute="height" multiplier="1:27.5" id="dzS-Oc-M2b"/>
+                            <constraint firstItem="z72-Pn-hGE" firstAttribute="width" secondItem="DtA-NA-8Ql" secondAttribute="width" multiplier="1:7.5" id="nuw-ON-XVg"/>
+                            <constraint firstItem="Bnu-2O-OGT" firstAttribute="bottom" secondItem="cZe-gO-snc" secondAttribute="bottom" id="oC8-EG-EvC"/>
+                            <constraint firstItem="TPp-Sj-3LP" firstAttribute="bottom" secondItem="LbB-Fb-9wS" secondAttribute="top" constant="-5" id="paN-gW-puy"/>
+                            <constraint firstItem="TPp-Sj-3LP" firstAttribute="leading" secondItem="cZe-gO-snc" secondAttribute="leading" id="rk6-WB-KR6"/>
+                            <constraint firstItem="z72-Pn-hGE" firstAttribute="bottom" secondItem="cZe-gO-snc" secondAttribute="bottom" id="tjI-aR-kfo"/>
+                            <constraint firstAttribute="trailing" secondItem="z72-Pn-hGE" secondAttribute="trailing" constant="5" id="zSH-Kn-Quw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cZe-gO-snc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uo7-IQ-fkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="119"/>
+        </scene>
+    </scenes>
+</document>

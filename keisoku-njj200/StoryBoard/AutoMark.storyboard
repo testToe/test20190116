@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sT-vp-6bM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AutoMarkViewController-->
+        <scene sceneID="4Fs-zz-PVX">
+            <objects>
+                <viewController storyboardIdentifier="AutoMarkView" title="AutoMarkViewController" id="0sT-vp-6bM" customClass="AutoMarkViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LtJ-Ue-LZo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SR7-hA-dzJ" userLabel="AutoMarkView">
+                                <rect key="frame" x="30" y="214.5" width="315" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua6-nE-daQ" userLabel="lblMarkerGroupID">
+                                        <rect key="frame" x="10" y="10" width="89" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自動マーカを実行しますか？実行すると現在のマーカは消去します" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSu-Ha-8hp" userLabel="lblAutoMarkConfirm">
+                                        <rect key="frame" x="10" y="41.5" width="315" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ft-B4-kLD" userLabel="rdoBtnAutoDetectStart" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="104.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="01S-ki-sIg"/>
+                                            <constraint firstAttribute="width" constant="20" id="Z3Q-XK-mgQ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnAutoDetectStartTap:" destination="0sT-vp-6bM" eventType="touchUpInside" id="spl-Y2-7J1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="初めから検出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fN-4t-Njl" userLabel="lblAutoDetectStart">
+                                        <rect key="frame" x="60" y="104" width="104" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-T6-XRX" userLabel="rdoBtnAutoDetectEnd" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="134.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="tdS-Gk-KPz"/>
+                                            <constraint firstAttribute="height" constant="20" id="yhK-LX-zHX"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnAutoDetectEndTap:" destination="0sT-vp-6bM" eventType="touchUpInside" id="LXS-Ja-P6x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="終わりから検出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-n0-mAj" userLabel="lblAutoDetectEnd">
+                                        <rect key="frame" x="60" y="134" width="121.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDa-5P-LZu" userLabel="borderTopLineFooter">
+                                        <rect key="frame" x="0.0" y="190" width="315" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="e0W-su-Pcx"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-4p-9xR" userLabel="FooterBtnStackView">
+                                        <rect key="frame" x="0.0" y="190.5" width="315" height="47.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuF-dV-Fyn" userLabel="btnCancel">
+                                                <rect key="frame" x="0.0" y="9" width="156" height="30"/>
+                                                <state key="normal" title="キャンセル">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelTap:" destination="0sT-vp-6bM" eventType="touchUpInside" id="Wqy-5I-xfc"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY9-gb-GzQ" userLabel="borderMiddleLineFooter">
+                                                <rect key="frame" x="157.5" y="0.0" width="0.5" height="47.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="hE6-rU-ZWs"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-Ip-K3r" userLabel="btnOK">
+                                                <rect key="frame" x="159" y="9" width="156" height="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnOKTap:" destination="0sT-vp-6bM" eventType="touchUpInside" id="v0s-iE-X4V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xuF-dV-Fyn" firstAttribute="width" secondItem="Dg8-4p-9xR" secondAttribute="width" multiplier="0.99:2" id="5fb-Zf-6DD"/>
+                                            <constraint firstItem="rEe-Ip-K3r" firstAttribute="width" secondItem="Dg8-4p-9xR" secondAttribute="width" multiplier="0.99:2" id="6gv-kx-lkY"/>
+                                            <constraint firstItem="XY9-gb-GzQ" firstAttribute="height" secondItem="Dg8-4p-9xR" secondAttribute="height" id="86w-M9-ujP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Ft-B4-kLD" firstAttribute="leading" secondItem="SR7-hA-dzJ" secondAttribute="leading" constant="25" id="0YQ-NR-7Vo"/>
+                                    <constraint firstItem="3fN-4t-Njl" firstAttribute="leading" secondItem="dS4-T6-XRX" secondAttribute="trailing" constant="15" id="144-OP-SCC"/>
+                                    <constraint firstItem="0Ft-B4-kLD" firstAttribute="top" secondItem="iSu-Ha-8hp" secondAttribute="bottom" constant="20" id="2tj-tO-BY7"/>
+                                    <constraint firstItem="ATb-n0-mAj" firstAttribute="leading" secondItem="dS4-T6-XRX" secondAttribute="trailing" constant="15" id="6jh-Dk-3o4"/>
+                                    <constraint firstItem="dS4-T6-XRX" firstAttribute="centerX" secondItem="0Ft-B4-kLD" secondAttribute="centerX" id="8aM-b4-sGz"/>
+                                    <constraint firstItem="iSu-Ha-8hp" firstAttribute="width" secondItem="SR7-hA-dzJ" secondAttribute="width" id="9MX-ps-EaC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dg8-4p-9xR" secondAttribute="trailing" id="B09-eR-0jg"/>
+                                    <constraint firstItem="Dg8-4p-9xR" firstAttribute="leading" secondItem="SR7-hA-dzJ" secondAttribute="leading" id="BV1-rL-GIm"/>
+                                    <constraint firstItem="dDa-5P-LZu" firstAttribute="leading" secondItem="SR7-hA-dzJ" secondAttribute="leading" id="Ewo-qw-gIB"/>
+                                    <constraint firstAttribute="trailing" secondItem="dDa-5P-LZu" secondAttribute="trailing" id="MXE-hQ-dMP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dg8-4p-9xR" secondAttribute="bottom" id="QDd-q5-wRH"/>
+                                    <constraint firstItem="Dg8-4p-9xR" firstAttribute="top" secondItem="dDa-5P-LZu" secondAttribute="bottom" id="Qcj-eJ-tne"/>
+                                    <constraint firstItem="Ua6-nE-daQ" firstAttribute="leading" secondItem="SR7-hA-dzJ" secondAttribute="leading" constant="10" id="UcX-XW-iVR"/>
+                                    <constraint firstItem="ATb-n0-mAj" firstAttribute="centerY" secondItem="dS4-T6-XRX" secondAttribute="centerY" id="aoE-Bw-G6o"/>
+                                    <constraint firstItem="Dg8-4p-9xR" firstAttribute="height" secondItem="SR7-hA-dzJ" secondAttribute="height" multiplier="1:5" id="bUT-JI-Uia"/>
+                                    <constraint firstItem="dS4-T6-XRX" firstAttribute="top" secondItem="0Ft-B4-kLD" secondAttribute="bottom" constant="10" id="c8g-Zf-2WL"/>
+                                    <constraint firstItem="iSu-Ha-8hp" firstAttribute="top" secondItem="Ua6-nE-daQ" secondAttribute="bottom" constant="10" id="eT2-oD-Uzq"/>
+                                    <constraint firstItem="3fN-4t-Njl" firstAttribute="centerY" secondItem="0Ft-B4-kLD" secondAttribute="centerY" id="fjA-Hc-OOr"/>
+                                    <constraint firstItem="Ua6-nE-daQ" firstAttribute="top" secondItem="SR7-hA-dzJ" secondAttribute="top" constant="10" id="rwg-qt-1X7"/>
+                                    <constraint firstItem="iSu-Ha-8hp" firstAttribute="leading" secondItem="SR7-hA-dzJ" secondAttribute="leading" constant="10" id="wsB-HJ-tJu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SR7-hA-dzJ" firstAttribute="height" secondItem="LtJ-Ue-LZo" secondAttribute="height" multiplier="2.5:7" id="ENG-eC-mZF"/>
+                            <constraint firstItem="SR7-hA-dzJ" firstAttribute="leading" secondItem="aJw-SO-XDs" secondAttribute="leading" constant="30" id="fAp-JN-Qen"/>
+                            <constraint firstItem="aJw-SO-XDs" firstAttribute="trailing" secondItem="SR7-hA-dzJ" secondAttribute="trailing" constant="30" id="hgv-kj-gPe"/>
+                            <constraint firstItem="SR7-hA-dzJ" firstAttribute="centerY" secondItem="LtJ-Ue-LZo" secondAttribute="centerY" id="smX-bz-yQV"/>
+                            <constraint firstItem="SR7-hA-dzJ" firstAttribute="centerX" secondItem="LtJ-Ue-LZo" secondAttribute="centerX" id="vW6-Ef-GLl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aJw-SO-XDs"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAutoMarkConfirm" destination="iSu-Ha-8hp" id="nDL-Kf-BCK"/>
+                        <outlet property="rdoBtnAutoDetectEnd" destination="dS4-T6-XRX" id="hx6-AW-Z8x"/>
+                        <outlet property="rdoBtnAutoDetectStart" destination="0Ft-B4-kLD" id="92K-B2-oL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgd-Bz-R24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="87"/>
+        </scene>
+    </scenes>
+</document>

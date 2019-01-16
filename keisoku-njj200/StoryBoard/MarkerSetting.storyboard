@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YjS-Ss-Zc5">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MarkerViewController-->
+        <scene sceneID="988-iK-IkP">
+            <objects>
+                <viewController storyboardIdentifier="MarkerSettingView" title="MarkerSettingViewController" id="YjS-Ss-Zc5" userLabel="MarkerViewController" customClass="MarkerSettingViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="30e-rx-gNx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkt-Cp-bex" userLabel="MarkerSettingView" customClass="DialogBackgroundView" customModule="keisoku_njj200" customModuleProvider="target">
+                                <rect key="frame" x="30" y="169.33333333333334" width="315" height="473.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIm-JL-xmk" userLabel="lblMarkerGroupID">
+                                        <rect key="frame" x="10" y="9.9999999999999982" width="79.666666666666671" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-MI-wp5" userLabel="CenterStackView">
+                                        <rect key="frame" x="10" y="40.333333333333314" width="295" height="375.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-jE-KIC" userLabel="btnShowHideMarkers">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="マーカ非表示">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRs-v3-ZfP" userLabel="btnShowHideMarkerList">
+                                                <rect key="frame" x="0.0" y="65.000000000000028" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="マーカリスト非表示">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-al-Hsl" userLabel="btnMarkerDetail">
+                                                <rect key="frame" x="0.0" y="130.33333333333334" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="マーカリスト詳細">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnMarkerDetailTap:" destination="YjS-Ss-Zc5" eventType="touchUpInside" id="6mB-AM-N0h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-wm-YyD" userLabel="btnSortMarker">
+                                                <rect key="frame" x="0.0" y="195.33333333333334" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="マーカソート">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnMarkerSortTap:" destination="YjS-Ss-Zc5" eventType="touchUpInside" id="V9W-Qe-2F3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzk-JC-sA3" userLabel="btnAutoMark">
+                                                <rect key="frame" x="0.0" y="260.66666666666663" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="自動検出">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnAutoMarkTap:" destination="YjS-Ss-Zc5" eventType="touchUpInside" id="S47-hP-kQc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLO-4w-pnO" userLabel="btnMarkerGrpSetting">
+                                                <rect key="frame" x="0.0" y="325.66666666666674" width="295" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="マーカグループ設定">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnMarkerGrpSettingTap:" destination="YjS-Ss-Zc5" eventType="touchUpInside" id="gcd-vM-klj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QR5-jE-KIC" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="4P0-hP-bxs"/>
+                                            <constraint firstItem="DRs-v3-ZfP" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="4Pb-Kh-6rn"/>
+                                            <constraint firstItem="jQv-wm-YyD" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="AIb-ix-hir"/>
+                                            <constraint firstItem="JLO-4w-pnO" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="Aoq-Ad-fWY"/>
+                                            <constraint firstItem="JLO-4w-pnO" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="E6Z-Nv-DSx"/>
+                                            <constraint firstItem="QR5-jE-KIC" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="KYJ-T0-lh6"/>
+                                            <constraint firstItem="Mv8-al-Hsl" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="Ncq-7p-LZs"/>
+                                            <constraint firstItem="DRs-v3-ZfP" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="QUy-5a-UJ0"/>
+                                            <constraint firstItem="jQv-wm-YyD" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="R6A-kk-iFK"/>
+                                            <constraint firstItem="zzk-JC-sA3" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="SFa-y0-HQN"/>
+                                            <constraint firstItem="Mv8-al-Hsl" firstAttribute="height" secondItem="5ad-MI-wp5" secondAttribute="height" multiplier="0.8:6" id="SVW-DC-7Af"/>
+                                            <constraint firstItem="zzk-JC-sA3" firstAttribute="width" secondItem="5ad-MI-wp5" secondAttribute="width" multiplier="1:1" id="oHZ-9q-gat"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vB-G2-vBT" userLabel="btnReturn">
+                                        <rect key="frame" x="0.0" y="426" width="315" height="47.666666666666686"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="メイン画面に戻る">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnReturnTap:" destination="YjS-Ss-Zc5" eventType="touchUpInside" id="Bmj-BR-ax8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="2vB-G2-vBT" firstAttribute="height" secondItem="bkt-Cp-bex" secondAttribute="height" multiplier="0.9:9" id="2vP-I2-MIH"/>
+                                    <constraint firstItem="mIm-JL-xmk" firstAttribute="leading" secondItem="bkt-Cp-bex" secondAttribute="leading" constant="10" id="7un-cX-BrE"/>
+                                    <constraint firstItem="mIm-JL-xmk" firstAttribute="top" secondItem="bkt-Cp-bex" secondAttribute="top" constant="10" id="8uj-oz-o9f"/>
+                                    <constraint firstAttribute="bottom" secondItem="2vB-G2-vBT" secondAttribute="bottom" id="AMQ-Lg-zRu"/>
+                                    <constraint firstItem="2vB-G2-vBT" firstAttribute="centerX" secondItem="bkt-Cp-bex" secondAttribute="centerX" id="HlF-Zl-zlu"/>
+                                    <constraint firstItem="5ad-MI-wp5" firstAttribute="leading" secondItem="bkt-Cp-bex" secondAttribute="leading" constant="10" id="NsU-1q-bx6"/>
+                                    <constraint firstItem="5ad-MI-wp5" firstAttribute="top" secondItem="mIm-JL-xmk" secondAttribute="bottom" constant="10" id="P7y-3l-868"/>
+                                    <constraint firstItem="2vB-G2-vBT" firstAttribute="top" secondItem="5ad-MI-wp5" secondAttribute="bottom" constant="10" id="VQi-pL-b2b"/>
+                                    <constraint firstItem="5ad-MI-wp5" firstAttribute="centerX" secondItem="bkt-Cp-bex" secondAttribute="centerX" id="kzX-An-N67"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ad-MI-wp5" secondAttribute="trailing" constant="10" id="owV-6j-pBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="2vB-G2-vBT" secondAttribute="trailing" id="qTY-HP-4AR"/>
+                                    <constraint firstItem="2vB-G2-vBT" firstAttribute="leading" secondItem="bkt-Cp-bex" secondAttribute="leading" id="uT0-8G-Bin"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bkt-Cp-bex" firstAttribute="centerX" secondItem="30e-rx-gNx" secondAttribute="centerX" id="35m-Uw-hgj"/>
+                            <constraint firstItem="bkt-Cp-bex" firstAttribute="leading" secondItem="Ps4-M6-23Z" secondAttribute="leading" constant="30" id="gFL-JZ-Y5H"/>
+                            <constraint firstItem="bkt-Cp-bex" firstAttribute="height" secondItem="30e-rx-gNx" secondAttribute="height" multiplier="3.5:6" id="nR4-wi-IVW"/>
+                            <constraint firstItem="Ps4-M6-23Z" firstAttribute="trailing" secondItem="bkt-Cp-bex" secondAttribute="trailing" constant="30" id="nTP-9C-3F9"/>
+                            <constraint firstItem="bkt-Cp-bex" firstAttribute="centerY" secondItem="30e-rx-gNx" secondAttribute="centerY" id="p9m-et-Urj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ps4-M6-23Z"/>
+                    </view>
+                    <connections>
+                        <segue destination="Hkb-XB-8WC" kind="presentation" identifier="MarkerListDetailViewSegue" id="FOS-wS-pDR"/>
+                        <segue destination="ebW-0S-DGp" kind="presentation" identifier="MarkerSortViewSegue" id="UGp-wp-GCW"/>
+                        <segue destination="KFy-f5-nNq" kind="presentation" identifier="AutoMarkViewSegue" id="MZX-dZ-SDM"/>
+                        <segue destination="BwR-bW-Fap" kind="presentation" identifier="MarkerGroupSettingViewSegue" id="xkf-N8-iFZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OS9-eQ-GYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6818.3999999999996" y="38.423645320197046"/>
+        </scene>
+        <!--MarkerListDetailView-->
+        <scene sceneID="58B-Jw-s8B">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MarkerListDetailView" storyboardName="MarkerListDetail" referencedIdentifier="MarkerListDetailView" id="Hkb-XB-8WC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYG-Lm-qYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6198" y="-145"/>
+        </scene>
+        <!--MarkerSortView-->
+        <scene sceneID="Rl5-3e-NcX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MarkerSortView" storyboardName="MarkerSort" referencedIdentifier="MarkerSortView" id="ebW-0S-DGp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqh-yT-SpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6224" y="-37"/>
+        </scene>
+        <!--AutoMarkView-->
+        <scene sceneID="j0w-H2-KBb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AutoMarkView" storyboardName="AutoMark" referencedIdentifier="AutoMarkView" id="KFy-f5-nNq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oU-7n-IVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6232" y="80"/>
+        </scene>
+        <!--MarkerGroupSettingView-->
+        <scene sceneID="GC6-kf-jIF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MarkerGroupSettingView" storyboardName="MarkerGroupSetting" referencedIdentifier="MarkerGroupSettingView" id="BwR-bW-Fap" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCm-G4-TUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6180" y="172"/>
+        </scene>
+    </scenes>
+</document>

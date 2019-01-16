@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18052CBE21E5E98500462436 /* MarkerListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18052CBD21E5E98500462436 /* MarkerListDetailViewController.swift */; };
+		18303FC721E77CDE00F49B44 /* CustomRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18303FC621E77CDE00F49B44 /* CustomRadioButton.swift */; };
+		18358E9221E9CCD3003DD94E /* MarkerSort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18358E9121E9CCD3003DD94E /* MarkerSort.storyboard */; };
+		18358E9421E9CDD7003DD94E /* MarkerSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18358E9321E9CDD7003DD94E /* MarkerSortViewController.swift */; };
+		18358E9621E9F590003DD94E /* AutoMark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18358E9521E9F590003DD94E /* AutoMark.storyboard */; };
+		18358E9821E9F603003DD94E /* AutoMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18358E9721E9F603003DD94E /* AutoMarkViewController.swift */; };
+		18358E9A21EA0A98003DD94E /* MarkerGroupSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18358E9921EA0A98003DD94E /* MarkerGroupSettingViewController.swift */; };
+		18358E9C21EA0C30003DD94E /* MarkerGroupSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18358E9B21EA0C30003DD94E /* MarkerGroupSetting.storyboard */; };
+		1841E12F21ECCBEB0031FA9B /* DataNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841E12E21ECCBEB0031FA9B /* DataNumberViewController.swift */; };
+		1841E13121ECCD260031FA9B /* DataNumber.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841E13021ECCD260031FA9B /* DataNumber.storyboard */; };
+		1841E13321ECD0F90031FA9B /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841E13221ECD0F90031FA9B /* CustomPickerView.swift */; };
+		18465F2E21EAE9E500FD52CA /* FileOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18465F2D21EAE9E400FD52CA /* FileOpenViewController.swift */; };
+		18465F3021EAEBAC00FD52CA /* FileOpen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18465F2F21EAEBAC00FD52CA /* FileOpen.storyboard */; };
+		18465F3221EAFADA00FD52CA /* FileListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18465F3121EAFADA00FD52CA /* FileListCollectionViewCell.swift */; };
+		18465F3421EAFB4E00FD52CA /* FileListCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18465F3321EAFB4E00FD52CA /* FileListCollectionViewLayout.swift */; };
+		18465F3721EB64E800FD52CA /* FolderSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18465F3621EB64E800FD52CA /* FolderSettingViewController.swift */; };
+		18465F3921EB669700FD52CA /* FolderSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18465F3821EB669700FD52CA /* FolderSetting.storyboard */; };
+		185702BE21E315D400CE1820 /* MenuSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185702BD21E315D400CE1820 /* MenuSettingViewController.swift */; };
+		186418C921E1F71200BC3F3F /* MainViewFooterLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186418C821E1F71200BC3F3F /* MainViewFooterLeft.swift */; };
+		186418CD21E2015100BC3F3F /* MainViewFooterRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186418CC21E2015100BC3F3F /* MainViewFooterRight.swift */; };
+		186418D121E2097400BC3F3F /* MainViewFooterLeft.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186418D021E2097400BC3F3F /* MainViewFooterLeft.xib */; };
+		186418D321E20C1500BC3F3F /* MainViewFooterRight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186418D221E20C1500BC3F3F /* MainViewFooterRight.xib */; };
+		186418D521E21B0100BC3F3F /* DialogBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186418D421E21B0100BC3F3F /* DialogBackgroundView.swift */; };
+		186418D721E21BC100BC3F3F /* MenuSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186418D621E21BC100BC3F3F /* MenuSetting.storyboard */; };
+		186B9D4521E4C2E30094BB8E /* MarkerListDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B9D4421E4C2E30094BB8E /* MarkerListDetail.storyboard */; };
+		186C330221E0BA5400347A9B /* ExportSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186C330121E0BA5400347A9B /* ExportSetting.storyboard */; };
+		18B6612221DDFDE500B8DA30 /* MarkerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6612121DDFDE500B8DA30 /* MarkerCollectionViewCell.swift */; };
+		18B6612421DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6612321DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift */; };
+		18D5E7D921E898C300926885 /* MarkerDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5E7D821E898C300926885 /* MarkerDetailCollectionViewCell.swift */; };
+		18D5E7DB21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5E7DA21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift */; };
+		3F55ADE621C0B12A005B7D21 /* MarkerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADE521C0B12A005B7D21 /* MarkerSettingViewController.swift */; };
+		3F55ADEA21C0B42F005B7D21 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADE921C0B42F005B7D21 /* Common.swift */; };
+		3F55ADEC21C0BDB8005B7D21 /* ExportSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADEB21C0BDB8005B7D21 /* ExportSettingViewController.swift */; };
+		3F8CAF2D21BE2941009499A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8CAF2C21BE2941009499A7 /* MainViewController.swift */; };
+		3F8E308821A7E2C700FBD223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E308721A7E2C700FBD223 /* AppDelegate.swift */; };
+		3F8E308D21A7E2C700FBD223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E308B21A7E2C700FBD223 /* Main.storyboard */; };
+		3F8E308F21A7E2E300FBD223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E308E21A7E2E300FBD223 /* Assets.xcassets */; };
+		3FADBEFE21BF77EC006A3A73 /* MarkerSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FADBEFD21BF77EC006A3A73 /* MarkerSetting.storyboard */; };
+		3FADBF0021BF7AFB006A3A73 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADBEFF21BF7AFB006A3A73 /* LaunchViewController.swift */; };
+		3FADBF1321BFAADF006A3A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FADBF1521BFAADF006A3A73 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18052CBD21E5E98500462436 /* MarkerListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerListDetailViewController.swift; sourceTree = "<group>"; };
+		18303FC621E77CDE00F49B44 /* CustomRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRadioButton.swift; sourceTree = "<group>"; };
+		18358E9121E9CCD3003DD94E /* MarkerSort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarkerSort.storyboard; sourceTree = "<group>"; };
+		18358E9321E9CDD7003DD94E /* MarkerSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerSortViewController.swift; sourceTree = "<group>"; };
+		18358E9521E9F590003DD94E /* AutoMark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoMark.storyboard; sourceTree = "<group>"; };
+		18358E9721E9F603003DD94E /* AutoMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMarkViewController.swift; sourceTree = "<group>"; };
+		18358E9921EA0A98003DD94E /* MarkerGroupSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerGroupSettingViewController.swift; sourceTree = "<group>"; };
+		18358E9B21EA0C30003DD94E /* MarkerGroupSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarkerGroupSetting.storyboard; sourceTree = "<group>"; };
+		1841E12E21ECCBEB0031FA9B /* DataNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNumberViewController.swift; sourceTree = "<group>"; };
+		1841E13021ECCD260031FA9B /* DataNumber.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataNumber.storyboard; sourceTree = "<group>"; };
+		1841E13221ECD0F90031FA9B /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		18465F2D21EAE9E400FD52CA /* FileOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpenViewController.swift; sourceTree = "<group>"; };
+		18465F2F21EAEBAC00FD52CA /* FileOpen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileOpen.storyboard; sourceTree = "<group>"; };
+		18465F3121EAFADA00FD52CA /* FileListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListCollectionViewCell.swift; sourceTree = "<group>"; };
+		18465F3321EAFB4E00FD52CA /* FileListCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListCollectionViewLayout.swift; sourceTree = "<group>"; };
+		18465F3621EB64E800FD52CA /* FolderSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSettingViewController.swift; sourceTree = "<group>"; };
+		18465F3821EB669700FD52CA /* FolderSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FolderSetting.storyboard; sourceTree = "<group>"; };
+		185702BD21E315D400CE1820 /* MenuSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSettingViewController.swift; sourceTree = "<group>"; };
+		186418C821E1F71200BC3F3F /* MainViewFooterLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFooterLeft.swift; sourceTree = "<group>"; };
+		186418CC21E2015100BC3F3F /* MainViewFooterRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFooterRight.swift; sourceTree = "<group>"; };
+		186418D021E2097400BC3F3F /* MainViewFooterLeft.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewFooterLeft.xib; sourceTree = "<group>"; };
+		186418D221E20C1500BC3F3F /* MainViewFooterRight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewFooterRight.xib; sourceTree = "<group>"; };
+		186418D421E21B0100BC3F3F /* DialogBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBackgroundView.swift; sourceTree = "<group>"; };
+		186418D621E21BC100BC3F3F /* MenuSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuSetting.storyboard; sourceTree = "<group>"; };
+		186B9D4421E4C2E30094BB8E /* MarkerListDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarkerListDetail.storyboard; sourceTree = "<group>"; };
+		186C330121E0BA5400347A9B /* ExportSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExportSetting.storyboard; sourceTree = "<group>"; };
+		18B6612121DDFDE500B8DA30 /* MarkerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerCollectionViewCell.swift; sourceTree = "<group>"; };
+		18B6612321DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerCollectionViewLayout.swift; sourceTree = "<group>"; };
+		18D5E7D821E898C300926885 /* MarkerDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D5E7DA21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDetailCollectionViewLayout.swift; sourceTree = "<group>"; };
+		3F55ADE521C0B12A005B7D21 /* MarkerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerSettingViewController.swift; sourceTree = "<group>"; };
+		3F55ADE921C0B42F005B7D21 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		3F55ADEB21C0BDB8005B7D21 /* ExportSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSettingViewController.swift; sourceTree = "<group>"; };
+		3F8CAF2C21BE2941009499A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3F8E308421A7E2C700FBD223 /* keisoku-njj200.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keisoku-njj200.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8E308721A7E2C700FBD223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F8E308C21A7E2C700FBD223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F8E308E21A7E2E300FBD223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F8E309321A7E2E300FBD223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FADBEFD21BF77EC006A3A73 /* MarkerSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarkerSetting.storyboard; sourceTree = "<group>"; };
+		3FADBEFF21BF7AFB006A3A73 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		3FADBF1421BFAADF006A3A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FADBF1621BFAB1C006A3A73 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F8E308121A7E2C700FBD223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18465F3521EB63C500FD52CA /* CollectionViewClass */ = {
+			isa = PBXGroup;
+			children = (
+				18B6612121DDFDE500B8DA30 /* MarkerCollectionViewCell.swift */,
+				18B6612321DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift */,
+				18D5E7D821E898C300926885 /* MarkerDetailCollectionViewCell.swift */,
+				18D5E7DA21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift */,
+				18465F3121EAFADA00FD52CA /* FileListCollectionViewCell.swift */,
+				18465F3321EAFB4E00FD52CA /* FileListCollectionViewLayout.swift */,
+			);
+			path = CollectionViewClass;
+			sourceTree = "<group>";
+		};
+		3F8E307B21A7E2C700FBD223 = {
+			isa = PBXGroup;
+			children = (
+				3F8E308621A7E2C700FBD223 /* keisoku-njj200 */,
+				3F8E308521A7E2C700FBD223 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F8E308521A7E2C700FBD223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E308421A7E2C700FBD223 /* keisoku-njj200.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8E308621A7E2C700FBD223 /* keisoku-njj200 */ = {
+			isa = PBXGroup;
+			children = (
+				18465F3521EB63C500FD52CA /* CollectionViewClass */,
+				3FADBEFC21BF74DE006A3A73 /* Assets */,
+				3FADBEFB21BF6ED2006A3A73 /* CommonClass */,
+				3FADBEFA21BF6EA1006A3A73 /* StoryBoard */,
+				3FADBEF821BF6E7A006A3A73 /* ViewController */,
+				3F8E308E21A7E2E300FBD223 /* Assets.xcassets */,
+				3F8E309321A7E2E300FBD223 /* Info.plist */,
+				3FADBF1521BFAADF006A3A73 /* Localizable.strings */,
+			);
+			path = "keisoku-njj200";
+			sourceTree = "<group>";
+		};
+		3FADBEF821BF6E7A006A3A73 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3F8CAF2C21BE2941009499A7 /* MainViewController.swift */,
+				3FADBEFF21BF7AFB006A3A73 /* LaunchViewController.swift */,
+				3F55ADE521C0B12A005B7D21 /* MarkerSettingViewController.swift */,
+				3F55ADEB21C0BDB8005B7D21 /* ExportSettingViewController.swift */,
+				185702BD21E315D400CE1820 /* MenuSettingViewController.swift */,
+				18052CBD21E5E98500462436 /* MarkerListDetailViewController.swift */,
+				18358E9321E9CDD7003DD94E /* MarkerSortViewController.swift */,
+				18358E9721E9F603003DD94E /* AutoMarkViewController.swift */,
+				18358E9921EA0A98003DD94E /* MarkerGroupSettingViewController.swift */,
+				18465F2D21EAE9E400FD52CA /* FileOpenViewController.swift */,
+				18465F3621EB64E800FD52CA /* FolderSettingViewController.swift */,
+				1841E12E21ECCBEB0031FA9B /* DataNumberViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3FADBEFA21BF6EA1006A3A73 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E308B21A7E2C700FBD223 /* Main.storyboard */,
+				3FADBEFD21BF77EC006A3A73 /* MarkerSetting.storyboard */,
+				186C330121E0BA5400347A9B /* ExportSetting.storyboard */,
+				186418D621E21BC100BC3F3F /* MenuSetting.storyboard */,
+				186418D021E2097400BC3F3F /* MainViewFooterLeft.xib */,
+				186418D221E20C1500BC3F3F /* MainViewFooterRight.xib */,
+				186B9D4421E4C2E30094BB8E /* MarkerListDetail.storyboard */,
+				18358E9121E9CCD3003DD94E /* MarkerSort.storyboard */,
+				18358E9521E9F590003DD94E /* AutoMark.storyboard */,
+				18358E9B21EA0C30003DD94E /* MarkerGroupSetting.storyboard */,
+				18465F2F21EAEBAC00FD52CA /* FileOpen.storyboard */,
+				18465F3821EB669700FD52CA /* FolderSetting.storyboard */,
+				1841E13021ECCD260031FA9B /* DataNumber.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3FADBEFB21BF6ED2006A3A73 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				3F8E308721A7E2C700FBD223 /* AppDelegate.swift */,
+				3F55ADE921C0B42F005B7D21 /* Common.swift */,
+				186418C821E1F71200BC3F3F /* MainViewFooterLeft.swift */,
+				186418CC21E2015100BC3F3F /* MainViewFooterRight.swift */,
+				186418D421E21B0100BC3F3F /* DialogBackgroundView.swift */,
+				18303FC621E77CDE00F49B44 /* CustomRadioButton.swift */,
+				1841E13221ECD0F90031FA9B /* CustomPickerView.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		3FADBEFC21BF74DE006A3A73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F8E308321A7E2C700FBD223 /* keisoku-njj200 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8E309621A7E2E300FBD223 /* Build configuration list for PBXNativeTarget "keisoku-njj200" */;
+			buildPhases = (
+				3F8E308021A7E2C700FBD223 /* Sources */,
+				3F8E308121A7E2C700FBD223 /* Frameworks */,
+				3F8E308221A7E2C700FBD223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "keisoku-njj200";
+			productName = "keisoku-njj200";
+			productReference = 3F8E308421A7E2C700FBD223 /* keisoku-njj200.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F8E307C21A7E2C700FBD223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "jp.co.kgs-inc";
+				TargetAttributes = {
+					3F8E308321A7E2C700FBD223 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 3F8E307F21A7E2C700FBD223 /* Build configuration list for PBXProject "keisoku-njj200" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+			);
+			mainGroup = 3F8E307B21A7E2C700FBD223;
+			productRefGroup = 3F8E308521A7E2C700FBD223 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8E308321A7E2C700FBD223 /* keisoku-njj200 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F8E308221A7E2C700FBD223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186418D721E21BC100BC3F3F /* MenuSetting.storyboard in Resources */,
+				18465F3921EB669700FD52CA /* FolderSetting.storyboard in Resources */,
+				18358E9621E9F590003DD94E /* AutoMark.storyboard in Resources */,
+				3F8E308F21A7E2E300FBD223 /* Assets.xcassets in Resources */,
+				186C330221E0BA5400347A9B /* ExportSetting.storyboard in Resources */,
+				186B9D4521E4C2E30094BB8E /* MarkerListDetail.storyboard in Resources */,
+				18358E9C21EA0C30003DD94E /* MarkerGroupSetting.storyboard in Resources */,
+				186418D321E20C1500BC3F3F /* MainViewFooterRight.xib in Resources */,
+				186418D121E2097400BC3F3F /* MainViewFooterLeft.xib in Resources */,
+				3FADBF1321BFAADF006A3A73 /* Localizable.strings in Resources */,
+				3FADBEFE21BF77EC006A3A73 /* MarkerSetting.storyboard in Resources */,
+				3F8E308D21A7E2C700FBD223 /* Main.storyboard in Resources */,
+				1841E13121ECCD260031FA9B /* DataNumber.storyboard in Resources */,
+				18358E9221E9CCD3003DD94E /* MarkerSort.storyboard in Resources */,
+				18465F3021EAEBAC00FD52CA /* FileOpen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F8E308021A7E2C700FBD223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186418C921E1F71200BC3F3F /* MainViewFooterLeft.swift in Sources */,
+				186418D521E21B0100BC3F3F /* DialogBackgroundView.swift in Sources */,
+				3F8E308821A7E2C700FBD223 /* AppDelegate.swift in Sources */,
+				1841E12F21ECCBEB0031FA9B /* DataNumberViewController.swift in Sources */,
+				18B6612221DDFDE500B8DA30 /* MarkerCollectionViewCell.swift in Sources */,
+				18465F2E21EAE9E500FD52CA /* FileOpenViewController.swift in Sources */,
+				18358E9421E9CDD7003DD94E /* MarkerSortViewController.swift in Sources */,
+				18303FC721E77CDE00F49B44 /* CustomRadioButton.swift in Sources */,
+				18465F3721EB64E800FD52CA /* FolderSettingViewController.swift in Sources */,
+				3FADBF0021BF7AFB006A3A73 /* LaunchViewController.swift in Sources */,
+				3F55ADEC21C0BDB8005B7D21 /* ExportSettingViewController.swift in Sources */,
+				1841E13321ECD0F90031FA9B /* CustomPickerView.swift in Sources */,
+				18B6612421DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift in Sources */,
+				18465F3221EAFADA00FD52CA /* FileListCollectionViewCell.swift in Sources */,
+				3F55ADE621C0B12A005B7D21 /* MarkerSettingViewController.swift in Sources */,
+				18465F3421EAFB4E00FD52CA /* FileListCollectionViewLayout.swift in Sources */,
+				185702BE21E315D400CE1820 /* MenuSettingViewController.swift in Sources */,
+				186418CD21E2015100BC3F3F /* MainViewFooterRight.swift in Sources */,
+				18D5E7DB21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift in Sources */,
+				18358E9A21EA0A98003DD94E /* MarkerGroupSettingViewController.swift in Sources */,
+				3F55ADEA21C0B42F005B7D21 /* Common.swift in Sources */,
+				18D5E7D921E898C300926885 /* MarkerDetailCollectionViewCell.swift in Sources */,
+				3F8CAF2D21BE2941009499A7 /* MainViewController.swift in Sources */,
+				18358E9821E9F603003DD94E /* AutoMarkViewController.swift in Sources */,
+				18052CBE21E5E98500462436 /* MarkerListDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F8E308B21A7E2C700FBD223 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8E308C21A7E2C700FBD223 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FADBF1521BFAADF006A3A73 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FADBF1421BFAADF006A3A73 /* en */,
+				3FADBF1621BFAB1C006A3A73 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F8E309421A7E2E300FBD223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F8E309521A7E2E300FBD223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F8E309721A7E2E300FBD223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THA65K2T56;
+				INFOPLIST_FILE = "keisoku-njj200/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.kgs-inc.keisoku-njj200";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F8E309821A7E2E300FBD223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THA65K2T56;
+				INFOPLIST_FILE = "keisoku-njj200/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.kgs-inc.keisoku-njj200";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F8E307F21A7E2C700FBD223 /* Build configuration list for PBXProject "keisoku-njj200" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E309421A7E2E300FBD223 /* Debug */,
+				3F8E309521A7E2E300FBD223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8E309621A7E2E300FBD223 /* Build configuration list for PBXNativeTarget "keisoku-njj200" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8E309721A7E2E300FBD223 /* Debug */,
+				3F8E309821A7E2E300FBD223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F8E307C21A7E2C700FBD223 /* Project object */;
+}

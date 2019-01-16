@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GD9-X0-i84">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FolderSettingViewController-->
+        <scene sceneID="E7h-1C-TOS">
+            <objects>
+                <viewController storyboardIdentifier="FolderSettingView" title="FolderSettingViewController" id="GD9-X0-i84" customClass="FolderSettingViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awy-au-JsP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-Ac-7Ui" userLabel="FolderSettingView">
+                                <rect key="frame" x="30" y="74.5" width="315" height="518"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォルダ設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8X-Hj-yit" userLabel="lblFolderSettingTitle">
+                                        <rect key="frame" x="10" y="10" width="110.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vV-Cz-bKp">
+                                        <rect key="frame" x="5" y="51.5" width="305" height="427.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPv-Jk-DpJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="427.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-3f-lxy">
+                                                        <rect key="frame" x="15" y="5" width="200" height="385"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ajb-JQ-glH" userLabel="Data1StackView">
+                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWT-tr-iqj" userLabel="rdoBtnData1" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Pih-gr-2Sv"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="yS1-Ha-yhN"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData1Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="svb-lK-3J2"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data1 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub9-hv-nLz" userLabel="lblData1">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="ub9-hv-nLz" firstAttribute="width" secondItem="Ajb-JQ-glH" secondAttribute="width" multiplier="1.7:2" id="M7g-Xk-VQ7"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8uA-sn-fu3" userLabel="Data2StackView">
+                                                                <rect key="frame" x="0.0" y="40.5" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K22-8C-U9U" userLabel="rdoBtnData2" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Czc-yA-AKu"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="ylE-xt-uja"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData2Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="319-Lg-omz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data2 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQq-ND-nWI" userLabel="lblData2">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="RQq-ND-nWI" firstAttribute="width" secondItem="8uA-sn-fu3" secondAttribute="width" multiplier="1.7:2" id="5px-mP-ggq"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C49-Sq-lRd" userLabel="Data3StackView">
+                                                                <rect key="frame" x="0.0" y="81" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWL-BU-e18" userLabel="rdoBtnData3" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="5Iu-tA-HWi"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="aKA-qR-Eqc"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData3Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="1Y4-pK-VyG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data3 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yM-jP-CRi" userLabel="lblData3">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="9yM-jP-CRi" firstAttribute="width" secondItem="C49-Sq-lRd" secondAttribute="width" multiplier="1.7:2" id="twF-rF-Zr6"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tnC-bD-Rcy" userLabel="Data4StackView">
+                                                                <rect key="frame" x="0.0" y="121.5" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3u-Yn-Bzq" userLabel="rdoBtnData4" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="Maq-i4-yX1"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="VgG-fo-AfI"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData4Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="nu3-7D-BDF"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data4 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-pd-cda" userLabel="lblData4">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="tJr-pd-cda" firstAttribute="width" secondItem="tnC-bD-Rcy" secondAttribute="width" multiplier="1.7:2" id="L4y-7e-fEh"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XDg-pq-jdq" userLabel="Data5StackView">
+                                                                <rect key="frame" x="0.0" y="162" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-hx-1j4" userLabel="rdoBtnData5" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Fr2-tA-9A2"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="Z7Y-xw-dEg"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData5Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="Sjj-ep-z4t"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data5 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxv-DS-dV4" userLabel="lblData5">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="Gxv-DS-dV4" firstAttribute="width" secondItem="XDg-pq-jdq" secondAttribute="width" multiplier="1.7:2" id="X7M-sv-6OM"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e7N-aW-gPN" userLabel="Data6StackView">
+                                                                <rect key="frame" x="0.0" y="202.5" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blG-9B-5rv" userLabel="rdoBtnData6" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="35R-6g-Or3"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="ann-qF-dDz"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData6Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="hdU-B6-WNg"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data6 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYr-b7-NyT" userLabel="lblData6">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="AYr-b7-NyT" firstAttribute="width" secondItem="e7N-aW-gPN" secondAttribute="width" multiplier="1.7:2" id="JIm-h7-hrY"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxr-46-pm7" userLabel="Data7StackView">
+                                                                <rect key="frame" x="0.0" y="243" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-my-4ia" userLabel="rdoBtnData7" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="4rG-QS-vnC"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="8mD-vw-f8b"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData7Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="c3x-hl-FQq"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data7 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwE-oW-Hlu" userLabel="lblData7">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="DwE-oW-Hlu" firstAttribute="width" secondItem="gxr-46-pm7" secondAttribute="width" multiplier="1.7:2" id="tWL-vg-4Qb"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XPj-LB-Rwb" userLabel="Data8StackView">
+                                                                <rect key="frame" x="0.0" y="283.5" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-z8-hkT" userLabel="rdoBtnData8" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="p2N-2X-S3T"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="xzB-be-QE4"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData8Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="iMR-rR-X3F"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data8 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf1-cz-19y" userLabel="lblData8">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="qf1-cz-19y" firstAttribute="width" secondItem="XPj-LB-Rwb" secondAttribute="width" multiplier="1.7:2" id="ggR-ed-QPH"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-qY-s0e" userLabel="Data9StackView">
+                                                                <rect key="frame" x="0.0" y="324" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5Z-2b-mqi" userLabel="rdoBtnData9" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="ru5-X7-mtV"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="uQA-al-0Zl"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData9Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="wvC-nh-WD2"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data9 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agM-CV-zX6" userLabel="lblData9">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="agM-CV-zX6" firstAttribute="width" secondItem="kTm-qY-s0e" secondAttribute="width" multiplier="1.7:2" id="kze-e9-ciW"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TMX-V0-al7" userLabel="Data10StackView">
+                                                                <rect key="frame" x="0.0" y="364.5" width="200" height="20.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-0m-Kob" userLabel="rdoBtnData10" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="0XQ-XH-7pZ"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="vAe-lf-PVQ"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="rdoBtnData10Tap:" destination="GD9-X0-i84" eventType="touchUpInside" id="gjL-bd-W9W"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data10 (7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-GK-iLR" userLabel="lblData10">
+                                                                        <rect key="frame" x="30" y="0.0" width="170" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="dbs-GK-iLR" firstAttribute="width" secondItem="TMX-V0-al7" secondAttribute="width" multiplier="1.7:2" id="z9E-pP-c6e"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ny4-3f-lxy" firstAttribute="top" secondItem="PPv-Jk-DpJ" secondAttribute="top" constant="5" id="Daa-y4-zts"/>
+                                                    <constraint firstItem="Ny4-3f-lxy" firstAttribute="leading" secondItem="PPv-Jk-DpJ" secondAttribute="leading" constant="15" id="xFL-Wq-jzV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PPv-Jk-DpJ" firstAttribute="leading" secondItem="1vV-Cz-bKp" secondAttribute="leading" id="H1w-dT-7Sx"/>
+                                            <constraint firstItem="PPv-Jk-DpJ" firstAttribute="centerX" secondItem="1vV-Cz-bKp" secondAttribute="centerX" id="YXR-50-hBu"/>
+                                            <constraint firstAttribute="bottom" secondItem="PPv-Jk-DpJ" secondAttribute="bottom" id="ff3-ge-wI4"/>
+                                            <constraint firstItem="PPv-Jk-DpJ" firstAttribute="centerY" secondItem="1vV-Cz-bKp" secondAttribute="centerY" id="l54-2b-mob"/>
+                                            <constraint firstItem="PPv-Jk-DpJ" firstAttribute="top" secondItem="1vV-Cz-bKp" secondAttribute="top" id="xO8-4t-1pC"/>
+                                            <constraint firstAttribute="trailing" secondItem="PPv-Jk-DpJ" secondAttribute="trailing" id="xyE-sd-aWY"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-My-OGJ" userLabel="borderTopLineFooter">
+                                        <rect key="frame" x="0.0" y="474" width="315" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="gjG-OR-lVp"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oob-Eh-Rqc" userLabel="FooterBtnStackView">
+                                        <rect key="frame" x="0.0" y="474.5" width="315" height="43.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-Pv-bxU" userLabel="btnCancel">
+                                                <rect key="frame" x="0.0" y="6.5" width="156" height="30"/>
+                                                <state key="normal" title="キャンセル">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelTap:" destination="GD9-X0-i84" eventType="touchUpInside" id="vQv-vY-TP0"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-Ko-RvP" userLabel="borderMiddleLineFooter">
+                                                <rect key="frame" x="157.5" y="0.0" width="0.5" height="43.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="S4c-5B-9PD"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-Uc-49V" userLabel="btnOK">
+                                                <rect key="frame" x="159" y="6.5" width="156" height="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnOKTap:" destination="GD9-X0-i84" eventType="touchUpInside" id="dWT-zQ-TL9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gcf-Pv-bxU" firstAttribute="width" secondItem="Oob-Eh-Rqc" secondAttribute="width" multiplier="0.99:2" id="IFe-Ur-1qm"/>
+                                            <constraint firstItem="ouh-Ko-RvP" firstAttribute="height" secondItem="Oob-Eh-Rqc" secondAttribute="height" id="lBN-Se-I8N"/>
+                                            <constraint firstItem="yEE-Uc-49V" firstAttribute="width" secondItem="Oob-Eh-Rqc" secondAttribute="width" multiplier="0.99:2" id="z6M-hW-R5l"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="S8X-Hj-yit" firstAttribute="leading" secondItem="a2r-Ac-7Ui" secondAttribute="leading" constant="10" id="BFA-cc-8Sc"/>
+                                    <constraint firstItem="S8X-Hj-yit" firstAttribute="top" secondItem="a2r-Ac-7Ui" secondAttribute="top" constant="10" id="DuH-HT-WRg"/>
+                                    <constraint firstItem="1vV-Cz-bKp" firstAttribute="bottom" secondItem="Gu5-My-OGJ" secondAttribute="top" constant="5" id="KZy-ST-AGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="1vV-Cz-bKp" secondAttribute="trailing" constant="5" id="LgU-3c-moz"/>
+                                    <constraint firstItem="1vV-Cz-bKp" firstAttribute="leading" secondItem="a2r-Ac-7Ui" secondAttribute="leading" constant="5" id="TmD-ob-nOf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oob-Eh-Rqc" secondAttribute="bottom" id="WNS-Xu-q8K"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oob-Eh-Rqc" secondAttribute="trailing" id="X1h-3A-8pm"/>
+                                    <constraint firstItem="Oob-Eh-Rqc" firstAttribute="leading" secondItem="a2r-Ac-7Ui" secondAttribute="leading" id="Zhv-sh-VCQ"/>
+                                    <constraint firstItem="Gu5-My-OGJ" firstAttribute="leading" secondItem="a2r-Ac-7Ui" secondAttribute="leading" id="pZd-a7-aZW"/>
+                                    <constraint firstItem="1vV-Cz-bKp" firstAttribute="top" secondItem="S8X-Hj-yit" secondAttribute="bottom" constant="20" id="vFM-Qw-N9B"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gu5-My-OGJ" secondAttribute="trailing" id="wbY-aZ-fbW"/>
+                                    <constraint firstItem="Oob-Eh-Rqc" firstAttribute="height" secondItem="a2r-Ac-7Ui" secondAttribute="height" multiplier="1:12" id="xe0-Gx-46G"/>
+                                    <constraint firstItem="Oob-Eh-Rqc" firstAttribute="top" secondItem="Gu5-My-OGJ" secondAttribute="bottom" id="yQ6-nR-aXo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="a2r-Ac-7Ui" firstAttribute="height" secondItem="und-f0-m7W" secondAttribute="height" multiplier="8:10" id="EWL-4T-Y60"/>
+                            <constraint firstItem="a2r-Ac-7Ui" firstAttribute="centerY" secondItem="awy-au-JsP" secondAttribute="centerY" id="H2A-6C-Ydo"/>
+                            <constraint firstItem="und-f0-m7W" firstAttribute="trailing" secondItem="a2r-Ac-7Ui" secondAttribute="trailing" constant="30" id="Qqx-UL-lmI"/>
+                            <constraint firstItem="a2r-Ac-7Ui" firstAttribute="leading" secondItem="und-f0-m7W" secondAttribute="leading" constant="30" id="suE-nO-wuz"/>
+                            <constraint firstItem="a2r-Ac-7Ui" firstAttribute="centerX" secondItem="awy-au-JsP" secondAttribute="centerX" id="vhS-ZE-HB6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="und-f0-m7W"/>
+                    </view>
+                    <connections>
+                        <outlet property="rdoBtnData1" destination="OWT-tr-iqj" id="24j-4b-05E"/>
+                        <outlet property="rdoBtnData10" destination="IP7-0m-Kob" id="Xjo-VM-TxF"/>
+                        <outlet property="rdoBtnData2" destination="K22-8C-U9U" id="V93-a2-hcd"/>
+                        <outlet property="rdoBtnData3" destination="yWL-BU-e18" id="k9m-SY-fdK"/>
+                        <outlet property="rdoBtnData4" destination="h3u-Yn-Bzq" id="ERb-qi-SeE"/>
+                        <outlet property="rdoBtnData5" destination="g8S-hx-1j4" id="0P6-Jh-Uaw"/>
+                        <outlet property="rdoBtnData6" destination="blG-9B-5rv" id="HB6-qx-Odc"/>
+                        <outlet property="rdoBtnData7" destination="DBL-my-4ia" id="Qzk-pe-6pW"/>
+                        <outlet property="rdoBtnData8" destination="VFG-z8-hkT" id="srJ-oI-Q55"/>
+                        <outlet property="rdoBtnData9" destination="q5Z-2b-mqi" id="55p-4f-uls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8a-78-1lX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>

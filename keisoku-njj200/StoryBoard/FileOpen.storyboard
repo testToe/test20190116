@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Prx-Oz-Z57">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FileOpenViewController-->
+        <scene sceneID="mO9-KV-r9F">
+            <objects>
+                <viewController storyboardIdentifier="FileOpenView" title="FileOpenViewController" id="Prx-Oz-Z57" customClass="FileOpenViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GUH-V1-yag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-hR-hEz" userLabel="MarkerListDetailView">
+                                <rect key="frame" x="30" y="49" width="315" height="569"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォルダ：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-Lt-Rfa" userLabel="lblFolder">
+                                        <rect key="frame" x="5" y="5" width="92" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkQ-qu-Doh" userLabel="lblFolderVal">
+                                        <rect key="frame" x="97" y="5" width="56" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljd-03-tZu" userLabel="btnDeleteAllFile">
+                                        <rect key="frame" x="160.5" y="5" width="149.5" height="28"/>
+                                        <color key="backgroundColor" red="0.88237834159999995" green="0.89111476079999996" blue="0.89111476079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                                        <state key="normal" title="フォルダ内データ削除">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnDeleteAllFileTap:" destination="Prx-Oz-Z57" eventType="touchUpInside" id="psb-E7-BKA"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hcR-fZ-ayU" userLabel="FileListCollectionView">
+                                        <rect key="frame" x="5" y="48" width="305" height="367.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Wf-eO-lm8" userLabel="FileListCollectionViewLayout" customClass="FileListCollectionViewLayout" customModule="keisoku_njj200" customModuleProvider="target">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FileListCollectionViewCell" id="OZP-l9-s7y" userLabel="cellFile" customClass="FileListCollectionViewCell" customModule="keisoku_njj200" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ファイル名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tt-yJ-owi" userLabel="lblFileName">
+                                                            <rect key="frame" x="10" y="0.0" width="50" height="25"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新日時" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-es-Kl6" userLabel="lblUpdatedDateTime">
+                                                            <rect key="frame" x="10" y="25" width="50" height="24.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfB-oG-f4I" userLabel="borderCellBottom">
+                                                            <rect key="frame" x="0.0" y="49.5" width="50" height="0.5"/>
+                                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="lfB-oG-f4I" firstAttribute="width" secondItem="OZP-l9-s7y" secondAttribute="width" id="1o1-c8-mhW"/>
+                                                    <constraint firstItem="1tt-yJ-owi" firstAttribute="leading" secondItem="OZP-l9-s7y" secondAttribute="leading" constant="10" id="AVc-m3-wC1"/>
+                                                    <constraint firstItem="1tt-yJ-owi" firstAttribute="top" secondItem="OZP-l9-s7y" secondAttribute="top" id="HNK-2z-aCm"/>
+                                                    <constraint firstItem="QCa-es-Kl6" firstAttribute="height" secondItem="OZP-l9-s7y" secondAttribute="height" multiplier="0.99:2" id="KFd-9m-yzt"/>
+                                                    <constraint firstItem="QCa-es-Kl6" firstAttribute="width" secondItem="OZP-l9-s7y" secondAttribute="width" id="LqT-o1-W5r"/>
+                                                    <constraint firstItem="1tt-yJ-owi" firstAttribute="width" secondItem="OZP-l9-s7y" secondAttribute="width" id="R75-FL-btN"/>
+                                                    <constraint firstItem="QCa-es-Kl6" firstAttribute="centerX" secondItem="1tt-yJ-owi" secondAttribute="centerX" id="V6B-DR-rcE"/>
+                                                    <constraint firstItem="QCa-es-Kl6" firstAttribute="bottom" secondItem="lfB-oG-f4I" secondAttribute="top" id="Vld-Ef-wT7"/>
+                                                    <constraint firstItem="1tt-yJ-owi" firstAttribute="height" secondItem="OZP-l9-s7y" secondAttribute="height" multiplier="0.99:2" id="YHS-GQ-Ixj"/>
+                                                    <constraint firstItem="lfB-oG-f4I" firstAttribute="centerX" secondItem="OZP-l9-s7y" secondAttribute="centerX" id="ahy-6w-Gwk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lfB-oG-f4I" secondAttribute="bottom" id="g2a-7l-BgA"/>
+                                                    <constraint firstItem="1tt-yJ-owi" firstAttribute="bottom" secondItem="QCa-es-Kl6" secondAttribute="top" id="hu2-ib-x8X"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="lblFileName" destination="1tt-yJ-owi" id="CTU-Na-kaG"/>
+                                                    <outlet property="lblUpdatedDateTime" destination="QCa-es-Kl6" id="Y8D-Qu-zfu"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Prx-Oz-Z57" id="Xg6-16-hAw"/>
+                                            <outlet property="delegate" destination="Prx-Oz-Z57" id="WBv-QZ-NTa"/>
+                                        </connections>
+                                    </collectionView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pi6-Gx-usQ" userLabel="imgThumbnail">
+                                        <rect key="frame" x="5" y="420.5" width="305" height="99"/>
+                                        <color key="backgroundColor" red="0.43434289380000002" green="0.76051476880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OzD-IX-dLf" userLabel="borderTopLineFooter">
+                                        <rect key="frame" x="0.0" y="524.5" width="315" height="1"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="NSv-S1-ORX"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KgK-es-Bf8" userLabel="FooterBtnStackView">
+                                        <rect key="frame" x="0.0" y="525.5" width="315" height="43.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYx-wU-A97" userLabel="btnCancel">
+                                                <rect key="frame" x="0.0" y="7" width="104" height="30"/>
+                                                <state key="normal" title="キャンセル">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelTap:" destination="Prx-Oz-Z57" eventType="touchUpInside" id="Iuo-tF-U3B"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-7s-2bx" userLabel="borderMiddleLineFooter1">
+                                                <rect key="frame" x="104.5" y="0.0" width="0.5" height="43.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="7dp-2h-kH4"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eC-zp-Sz2" userLabel="btnDelete">
+                                                <rect key="frame" x="105.5" y="7" width="104" height="30"/>
+                                                <state key="normal" title="削除">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnDeleteTap:" destination="Prx-Oz-Z57" eventType="touchUpInside" id="tCk-wL-deh"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-CZ-9GU" userLabel="borderMiddleLineFooter2">
+                                                <rect key="frame" x="210" y="0.0" width="0.5" height="43.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="zhe-0u-vLU"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhT-3g-FFe" userLabel="btnRead">
+                                                <rect key="frame" x="211" y="7" width="104" height="30"/>
+                                                <state key="normal" title="読込み">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnReadTap:" destination="Prx-Oz-Z57" eventType="touchUpInside" id="Zqc-Fb-6gY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JhT-3g-FFe" firstAttribute="width" secondItem="KgK-es-Bf8" secondAttribute="width" multiplier="0.99:3" id="23q-9a-hdL"/>
+                                            <constraint firstItem="a3f-CZ-9GU" firstAttribute="height" secondItem="KgK-es-Bf8" secondAttribute="height" id="6Ze-s7-BV8"/>
+                                            <constraint firstItem="VYx-wU-A97" firstAttribute="width" secondItem="KgK-es-Bf8" secondAttribute="width" multiplier="0.99:3" id="bGb-Eo-a0h"/>
+                                            <constraint firstItem="4eC-zp-Sz2" firstAttribute="width" secondItem="KgK-es-Bf8" secondAttribute="width" multiplier="0.99:3" id="i4D-pQ-Sz4"/>
+                                            <constraint firstItem="0Ex-7s-2bx" firstAttribute="height" secondItem="KgK-es-Bf8" secondAttribute="height" id="xfZ-B0-DqY"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Pi6-Gx-usQ" firstAttribute="leading" secondItem="mpx-hR-hEz" secondAttribute="leading" constant="5" id="1QL-hq-Ov5"/>
+                                    <constraint firstItem="wkQ-qu-Doh" firstAttribute="centerY" secondItem="5La-Lt-Rfa" secondAttribute="centerY" id="4Za-Ct-GO3"/>
+                                    <constraint firstItem="OzD-IX-dLf" firstAttribute="centerX" secondItem="mpx-hR-hEz" secondAttribute="centerX" id="4z6-PF-avm"/>
+                                    <constraint firstItem="ljd-03-tZu" firstAttribute="top" secondItem="mpx-hR-hEz" secondAttribute="top" constant="5" id="Edg-h0-85X"/>
+                                    <constraint firstItem="hcR-fZ-ayU" firstAttribute="leading" secondItem="mpx-hR-hEz" secondAttribute="leading" constant="5" id="HO8-sp-698"/>
+                                    <constraint firstItem="OzD-IX-dLf" firstAttribute="bottom" secondItem="KgK-es-Bf8" secondAttribute="top" id="K2a-ul-RwH"/>
+                                    <constraint firstItem="ljd-03-tZu" firstAttribute="width" secondItem="mpx-hR-hEz" secondAttribute="width" multiplier="0.95:2" id="NWw-jM-vK3"/>
+                                    <constraint firstItem="KgK-es-Bf8" firstAttribute="leading" secondItem="mpx-hR-hEz" secondAttribute="leading" id="NWx-dw-LuM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pi6-Gx-usQ" secondAttribute="trailing" constant="5" id="RJn-Ef-wQX"/>
+                                    <constraint firstItem="hcR-fZ-ayU" firstAttribute="bottom" secondItem="Pi6-Gx-usQ" secondAttribute="top" constant="-5" id="Tak-fn-OoG"/>
+                                    <constraint firstItem="OzD-IX-dLf" firstAttribute="leading" secondItem="mpx-hR-hEz" secondAttribute="leading" id="ZA8-YT-Acs"/>
+                                    <constraint firstItem="hcR-fZ-ayU" firstAttribute="height" secondItem="mpx-hR-hEz" secondAttribute="height" multiplier="4.2:6.5" id="c6w-dc-wQA"/>
+                                    <constraint firstAttribute="trailing" secondItem="OzD-IX-dLf" secondAttribute="trailing" id="fT1-Ff-cAX"/>
+                                    <constraint firstItem="hcR-fZ-ayU" firstAttribute="top" secondItem="ljd-03-tZu" secondAttribute="bottom" constant="15" id="hrC-fh-Trc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ljd-03-tZu" secondAttribute="trailing" constant="5" id="jOa-8J-k0T"/>
+                                    <constraint firstItem="5La-Lt-Rfa" firstAttribute="leading" secondItem="mpx-hR-hEz" secondAttribute="leading" constant="5" id="kXH-WR-T1C"/>
+                                    <constraint firstItem="wkQ-qu-Doh" firstAttribute="leading" secondItem="5La-Lt-Rfa" secondAttribute="trailing" id="mCA-Z6-ZUq"/>
+                                    <constraint firstItem="5La-Lt-Rfa" firstAttribute="top" secondItem="mpx-hR-hEz" secondAttribute="top" constant="5" id="ouH-m6-ebD"/>
+                                    <constraint firstAttribute="trailing" secondItem="KgK-es-Bf8" secondAttribute="trailing" id="q0d-6w-pK2"/>
+                                    <constraint firstAttribute="trailing" secondItem="hcR-fZ-ayU" secondAttribute="trailing" constant="5" id="sX1-2u-5Yk"/>
+                                    <constraint firstItem="KgK-es-Bf8" firstAttribute="height" secondItem="mpx-hR-hEz" secondAttribute="height" multiplier="0.5:6.5" id="uDk-uc-98t"/>
+                                    <constraint firstItem="Pi6-Gx-usQ" firstAttribute="bottom" secondItem="OzD-IX-dLf" secondAttribute="top" constant="-5" id="uxZ-gG-XRD"/>
+                                    <constraint firstAttribute="bottom" secondItem="KgK-es-Bf8" secondAttribute="bottom" id="wdN-hV-bOE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mpx-hR-hEz" firstAttribute="height" secondItem="kvQ-t0-lCD" secondAttribute="height" multiplier="8.8:10" id="KGm-nQ-q2H"/>
+                            <constraint firstItem="mpx-hR-hEz" firstAttribute="centerX" secondItem="GUH-V1-yag" secondAttribute="centerX" id="UTE-Bh-JJ0"/>
+                            <constraint firstItem="mpx-hR-hEz" firstAttribute="centerY" secondItem="GUH-V1-yag" secondAttribute="centerY" id="eXN-7d-rOW"/>
+                            <constraint firstItem="mpx-hR-hEz" firstAttribute="leading" secondItem="kvQ-t0-lCD" secondAttribute="leading" constant="30" id="ise-1b-Vak"/>
+                            <constraint firstItem="kvQ-t0-lCD" firstAttribute="trailing" secondItem="mpx-hR-hEz" secondAttribute="trailing" constant="30" id="skd-uT-F9B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kvQ-t0-lCD"/>
+                    </view>
+                    <connections>
+                        <outlet property="fileListCollectionLayout" destination="5Wf-eO-lm8" id="8AD-eY-Bfw"/>
+                        <outlet property="fileListCollectionView" destination="hcR-fZ-ayU" id="tx0-lI-Paf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Id4-bh-9jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

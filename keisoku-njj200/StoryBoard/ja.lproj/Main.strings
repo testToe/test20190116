@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "test app name"; ObjectID = "9UE-D4-ib2"; */
+"9UE-D4-ib2.text" = "test app name";
+
+/* Class = "UIViewController"; title = "LaunchViewController"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "LaunchViewController";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Bu2-PR-zZM"; */
+"Bu2-PR-zZM.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WOh-yS-VZ8"; */
+"WOh-yS-VZ8.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "k5b-pG-r5j"; */
+"k5b-pG-r5j.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tZX-Lu-Rpf"; */
+"tZX-Lu-Rpf.normalTitle" = "Button";

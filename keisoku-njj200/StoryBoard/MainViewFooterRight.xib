@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewFooterRight" customModule="keisoku_njj200" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7tC-5q-YHB" userLabel="FooterRightStackView">
+                    <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sensor_notConnect" translatesAutoresizingMaskIntoConstraints="NO" id="z4D-Wh-83y" userLabel="imgSensorConnectionState">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="647"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sensor_batt6" translatesAutoresizingMaskIntoConstraints="NO" id="71m-zV-XRh" userLabel="imgSensorBatt">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="647"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="71m-zV-XRh" firstAttribute="width" secondItem="7tC-5q-YHB" secondAttribute="width" multiplier="1:2" id="4ex-dk-fra"/>
+                        <constraint firstItem="71m-zV-XRh" firstAttribute="height" secondItem="7tC-5q-YHB" secondAttribute="height" multiplier="1:1" id="Snj-Pa-mvf"/>
+                        <constraint firstItem="z4D-Wh-83y" firstAttribute="height" secondItem="7tC-5q-YHB" secondAttribute="height" multiplier="1:1" id="hnm-0H-CW8"/>
+                        <constraint firstItem="z4D-Wh-83y" firstAttribute="width" secondItem="7tC-5q-YHB" secondAttribute="width" multiplier="1:2" id="qZ0-wj-Zmt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7tC-5q-YHB" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="Q7y-EP-zlr"/>
+                <constraint firstItem="7tC-5q-YHB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rf1-vo-jrw"/>
+                <constraint firstItem="7tC-5q-YHB" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="ftm-9e-sTQ"/>
+                <constraint firstItem="7tC-5q-YHB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nxn-LL-Zby"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_sensor_batt6" width="37.5" height="37.5"/>
+        <image name="img_sensor_notConnect" width="37.5" height="37.5"/>
+    </resources>
+</document>

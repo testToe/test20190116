@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HG3-45-gxn" userLabel="FooterLeftStackView">
+                    <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ph_batt100" translatesAutoresizingMaskIntoConstraints="NO" id="Phg-Or-Gdm" userLabel="imgPhBatt">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="647"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpF-aB-btp" userLabel="btnRotateScreen">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="647"/>
+                            <state key="normal" backgroundImage="btn_rotate_screen"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Phg-Or-Gdm" firstAttribute="width" secondItem="HG3-45-gxn" secondAttribute="width" multiplier="1:2" id="5aK-hm-pXY"/>
+                        <constraint firstItem="Phg-Or-Gdm" firstAttribute="height" secondItem="HG3-45-gxn" secondAttribute="height" multiplier="1:1" id="7ms-hX-sjM"/>
+                        <constraint firstItem="BpF-aB-btp" firstAttribute="width" secondItem="HG3-45-gxn" secondAttribute="width" multiplier="1:2" id="DhJ-AP-QwF"/>
+                        <constraint firstItem="BpF-aB-btp" firstAttribute="height" secondItem="HG3-45-gxn" secondAttribute="height" multiplier="1:1" id="Dtf-nw-4lK"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HG3-45-gxn" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="On8-3t-haL"/>
+                <constraint firstItem="HG3-45-gxn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rxl-XA-oLS"/>
+                <constraint firstItem="HG3-45-gxn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="U8G-r8-Ziz"/>
+                <constraint firstItem="HG3-45-gxn" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="qqF-ax-wh7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_rotate_screen" width="37.5" height="37.5"/>
+        <image name="img_ph_batt100" width="37.5" height="37.5"/>
+    </resources>
+</document>

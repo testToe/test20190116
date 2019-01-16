@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4T1-gN-pTx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MarkerGroupSettingViewController-->
+        <scene sceneID="qip-pE-uSe">
+            <objects>
+                <viewController storyboardIdentifier="MarkerGroupSettingView" title="MarkerGroupSettingViewController" id="4T1-gN-pTx" customClass="MarkerGroupSettingViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9I-0w-RJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZI-ln-r2A" userLabel="MarkerGroupSettingView">
+                                <rect key="frame" x="30" y="233.5" width="315" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マーカグループ設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibM-vx-H3V" userLabel="lblMarkerGroupSettingTitle">
+                                        <rect key="frame" x="10" y="10" width="165.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHm-HZ-XCD" userLabel="rdoBtnGrp0" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="56.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="5mc-ZI-3Cc"/>
+                                            <constraint firstAttribute="height" constant="20" id="BgI-9O-Ow8"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnGrp0Tap:" destination="4T1-gN-pTx" eventType="touchUpInside" id="BXz-iD-WbT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3G-W3-LDl" userLabel="lblGrp0">
+                                        <rect key="frame" x="60" y="56" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-wo-IfS" userLabel="rdoBtnGrp1" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="89.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="8lW-xd-t8N"/>
+                                            <constraint firstAttribute="height" constant="20" id="mpV-We-wqn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnGrp1Tap:" destination="4T1-gN-pTx" eventType="touchUpInside" id="vhf-dw-egd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FI-Bm-yPp" userLabel="lblGrp1">
+                                        <rect key="frame" x="60" y="89" width="77" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drw-on-Foj" userLabel="rdoBtnGrp2" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="122.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ADN-JB-WdL"/>
+                                            <constraint firstAttribute="width" constant="20" id="l33-pj-zh9"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnGrp2Tap:" destination="4T1-gN-pTx" eventType="touchUpInside" id="M03-Ju-bsU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0K-md-CYW" userLabel="lblGrp2">
+                                        <rect key="frame" x="60" y="122" width="79.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-Ko-hyA" userLabel="borderTopLineFooter">
+                                        <rect key="frame" x="0.0" y="159.5" width="315" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="ciy-Ov-Fos"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-fQ-g5n" userLabel="FooterBtnStackView">
+                                        <rect key="frame" x="0.0" y="160" width="315" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dny-rm-epv" userLabel="btnCancel">
+                                                <rect key="frame" x="0.0" y="5" width="156" height="30"/>
+                                                <state key="normal" title="キャンセル">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelTap:" destination="4T1-gN-pTx" eventType="touchUpInside" id="F69-cZ-VZS"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-18-Uta" userLabel="borderMiddleLineFooter">
+                                                <rect key="frame" x="157.5" y="0.0" width="0.5" height="40"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="R3p-Kk-1OK"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVj-oA-U7U" userLabel="btnOK">
+                                                <rect key="frame" x="159" y="5" width="156" height="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnOKTap:" destination="4T1-gN-pTx" eventType="touchUpInside" id="cTB-NG-plt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NVj-oA-U7U" firstAttribute="width" secondItem="aDd-fQ-g5n" secondAttribute="width" multiplier="0.99:2" id="D7d-cG-HhW"/>
+                                            <constraint firstItem="dny-rm-epv" firstAttribute="width" secondItem="aDd-fQ-g5n" secondAttribute="width" multiplier="0.99:2" id="Fkc-Ef-od8"/>
+                                            <constraint firstItem="TZC-18-Uta" firstAttribute="height" secondItem="aDd-fQ-g5n" secondAttribute="height" id="cn1-Mx-aRm"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b3G-W3-LDl" firstAttribute="centerY" secondItem="YHm-HZ-XCD" secondAttribute="centerY" id="2jD-ce-OFr"/>
+                                    <constraint firstItem="drw-on-Foj" firstAttribute="centerX" secondItem="hMh-wo-IfS" secondAttribute="centerX" id="9I2-5X-nkI"/>
+                                    <constraint firstItem="S0K-md-CYW" firstAttribute="leading" secondItem="drw-on-Foj" secondAttribute="trailing" constant="15" id="Bj3-qb-t3I"/>
+                                    <constraint firstItem="S0K-md-CYW" firstAttribute="centerY" secondItem="drw-on-Foj" secondAttribute="centerY" id="CJN-zc-Jbl"/>
+                                    <constraint firstItem="hMh-wo-IfS" firstAttribute="centerX" secondItem="YHm-HZ-XCD" secondAttribute="centerX" id="CX0-6Z-huL"/>
+                                    <constraint firstItem="ibM-vx-H3V" firstAttribute="top" secondItem="TZI-ln-r2A" secondAttribute="top" constant="10" id="Cbg-5k-UFD"/>
+                                    <constraint firstItem="aDd-fQ-g5n" firstAttribute="top" secondItem="5E4-Ko-hyA" secondAttribute="bottom" id="Ck2-bK-h02"/>
+                                    <constraint firstAttribute="trailing" secondItem="aDd-fQ-g5n" secondAttribute="trailing" id="FZf-WU-T5A"/>
+                                    <constraint firstItem="hMh-wo-IfS" firstAttribute="top" secondItem="YHm-HZ-XCD" secondAttribute="bottom" constant="13" id="HM7-0U-XsP"/>
+                                    <constraint firstItem="ibM-vx-H3V" firstAttribute="leading" secondItem="TZI-ln-r2A" secondAttribute="leading" constant="10" id="HPx-jd-JdH"/>
+                                    <constraint firstItem="aDd-fQ-g5n" firstAttribute="leading" secondItem="TZI-ln-r2A" secondAttribute="leading" id="KHY-vu-qXh"/>
+                                    <constraint firstItem="b3G-W3-LDl" firstAttribute="leading" secondItem="hMh-wo-IfS" secondAttribute="trailing" constant="15" id="UeZ-kH-tmk"/>
+                                    <constraint firstItem="5E4-Ko-hyA" firstAttribute="leading" secondItem="TZI-ln-r2A" secondAttribute="leading" id="bew-OV-ynN"/>
+                                    <constraint firstAttribute="bottom" secondItem="aDd-fQ-g5n" secondAttribute="bottom" id="dTd-Q2-oy1"/>
+                                    <constraint firstItem="0FI-Bm-yPp" firstAttribute="leading" secondItem="hMh-wo-IfS" secondAttribute="trailing" constant="15" id="dbq-D2-cm7"/>
+                                    <constraint firstItem="drw-on-Foj" firstAttribute="top" secondItem="hMh-wo-IfS" secondAttribute="bottom" constant="13" id="ih4-nb-hhl"/>
+                                    <constraint firstAttribute="trailing" secondItem="5E4-Ko-hyA" secondAttribute="trailing" id="jps-vj-niF"/>
+                                    <constraint firstItem="YHm-HZ-XCD" firstAttribute="leading" secondItem="TZI-ln-r2A" secondAttribute="leading" constant="25" id="nme-GQ-2sG"/>
+                                    <constraint firstItem="YHm-HZ-XCD" firstAttribute="top" secondItem="ibM-vx-H3V" secondAttribute="bottom" constant="25" id="uMR-Td-x4y"/>
+                                    <constraint firstItem="0FI-Bm-yPp" firstAttribute="centerY" secondItem="hMh-wo-IfS" secondAttribute="centerY" id="z0Y-4c-V2q"/>
+                                    <constraint firstItem="aDd-fQ-g5n" firstAttribute="height" secondItem="TZI-ln-r2A" secondAttribute="height" multiplier="1:5" id="zpg-c9-Ztq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TZI-ln-r2A" firstAttribute="height" secondItem="x9I-0w-RJ3" secondAttribute="height" multiplier="2.1:7" id="1bY-X2-skJ"/>
+                            <constraint firstItem="TZI-ln-r2A" firstAttribute="centerX" secondItem="x9I-0w-RJ3" secondAttribute="centerX" id="6Ve-ov-2gb"/>
+                            <constraint firstItem="TZI-ln-r2A" firstAttribute="centerY" secondItem="x9I-0w-RJ3" secondAttribute="centerY" id="IcV-Zo-Hih"/>
+                            <constraint firstItem="bHi-Xk-ehB" firstAttribute="trailing" secondItem="TZI-ln-r2A" secondAttribute="trailing" constant="30" id="jig-AZ-5Z0"/>
+                            <constraint firstItem="TZI-ln-r2A" firstAttribute="leading" secondItem="bHi-Xk-ehB" secondAttribute="leading" constant="30" id="mgm-FD-ChG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bHi-Xk-ehB"/>
+                    </view>
+                    <connections>
+                        <outlet property="rdoBtnGrp0" destination="YHm-HZ-XCD" id="mXD-TW-i2i"/>
+                        <outlet property="rdoBtnGrp1" destination="hMh-wo-IfS" id="S7B-Fj-Imx"/>
+                        <outlet property="rdoBtnGrp2" destination="drw-on-Foj" id="xka-gb-41d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S40-uv-2Cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="94"/>
+        </scene>
+    </scenes>
+</document>

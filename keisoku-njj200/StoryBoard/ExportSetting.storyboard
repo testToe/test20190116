@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="etw-3o-nwW">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExportSettingViewController-->
+        <scene sceneID="KZU-YL-cP1">
+            <objects>
+                <viewController storyboardIdentifier="ExportSettingView" title="ExportSettingViewController" id="etw-3o-nwW" customClass="ExportSettingViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xfX-5s-Cca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yd-OM-H0Z" userLabel="ExportSettingView" customClass="DialogBackgroundView" customModule="keisoku_njj200" customModuleProvider="target">
+                                <rect key="frame" x="30" y="236.99999999999997" width="315" height="338.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-jw-LlG" userLabel="btnReturn">
+                                        <rect key="frame" x="0.0" y="290" width="315" height="48.333333333333314"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="メイン画面に戻る">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnReturnTap:" destination="etw-3o-nwW" eventType="touchUpInside" id="cSb-yk-XcZ"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oOn-Ik-hYr" userLabel="CenterStackView">
+                                        <rect key="frame" x="10" y="10" width="295" height="270"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oae-tQ-m1i" userLabel="btnOpenFolder">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="43"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="ファイルを開く">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnFileOpenTap:" destination="etw-3o-nwW" eventType="touchUpInside" id="Aun-V1-MgJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iH-DA-WJR" userLabel="btnSelectFolder">
+                                                <rect key="frame" x="0.0" y="56.666666666666686" width="295" height="43"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="フォルダ設定">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnFolderSettingTap:" destination="etw-3o-nwW" eventType="touchUpInside" id="Gdk-2U-pjF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b6-ne-tc6" userLabel="btnDataNumSetting">
+                                                <rect key="frame" x="0.0" y="113.33333333333331" width="295" height="43"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="データ番号設定">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnDataNumSettingTap:" destination="etw-3o-nwW" eventType="touchUpInside" id="fhi-ns-Rzs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTH-Fz-gg3" userLabel="btnDeleteCurrentData">
+                                                <rect key="frame" x="0.0" y="170" width="295" height="43"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="表示データを削除します">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZe-Xl-SM0" userLabel="btnClearXMark">
+                                                <rect key="frame" x="0.0" y="226.66666666666669" width="295" height="43.333333333333314"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="距離マーカをクリアします">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jZe-Xl-SM0" firstAttribute="height" secondItem="oOn-Ik-hYr" secondAttribute="height" multiplier="0.8:5" id="1Ng-H4-wri"/>
+                                            <constraint firstItem="6iH-DA-WJR" firstAttribute="height" secondItem="oOn-Ik-hYr" secondAttribute="height" multiplier="0.8:5" id="FH9-CY-X5c"/>
+                                            <constraint firstItem="6iH-DA-WJR" firstAttribute="width" secondItem="oOn-Ik-hYr" secondAttribute="width" multiplier="1:1" id="TnD-mL-qOp"/>
+                                            <constraint firstItem="jZe-Xl-SM0" firstAttribute="width" secondItem="oOn-Ik-hYr" secondAttribute="width" multiplier="1:1" id="VYo-1g-L5H"/>
+                                            <constraint firstItem="8b6-ne-tc6" firstAttribute="height" secondItem="oOn-Ik-hYr" secondAttribute="height" multiplier="0.8:5" id="YF3-Q7-xuG"/>
+                                            <constraint firstItem="oae-tQ-m1i" firstAttribute="height" secondItem="oOn-Ik-hYr" secondAttribute="height" multiplier="0.8:5" id="aPS-jg-wvl"/>
+                                            <constraint firstItem="8b6-ne-tc6" firstAttribute="width" secondItem="oOn-Ik-hYr" secondAttribute="width" multiplier="1:1" id="ani-fL-Wau"/>
+                                            <constraint firstItem="BTH-Fz-gg3" firstAttribute="width" secondItem="oOn-Ik-hYr" secondAttribute="width" multiplier="1:1" id="j5p-Yd-rh7"/>
+                                            <constraint firstItem="BTH-Fz-gg3" firstAttribute="height" secondItem="oOn-Ik-hYr" secondAttribute="height" multiplier="0.8:5" id="t1L-yS-68j"/>
+                                            <constraint firstItem="oae-tQ-m1i" firstAttribute="width" secondItem="oOn-Ik-hYr" secondAttribute="width" multiplier="1:1" id="zh2-Vj-d2Y"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52d-XS-ecm" userLabel="lblFolderNum">
+                                        <rect key="frame" x="292.33333333333331" y="66.666666666666686" width="7.6666666666666856" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-zj-uQC" userLabel="lblDataNum">
+                                        <rect key="frame" x="271.66666666666669" y="123.33333333333331" width="28.333333333333314" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oOn-Ik-hYr" secondAttribute="trailing" constant="10" id="0Uq-cY-Lhi"/>
+                                    <constraint firstItem="oOn-Ik-hYr" firstAttribute="top" secondItem="8yd-OM-H0Z" secondAttribute="top" constant="10" id="4Vm-Tz-rAG"/>
+                                    <constraint firstItem="ZbR-jw-LlG" firstAttribute="top" secondItem="oOn-Ik-hYr" secondAttribute="bottom" constant="10" id="4p9-sP-uBq"/>
+                                    <constraint firstItem="oOn-Ik-hYr" firstAttribute="leading" secondItem="8yd-OM-H0Z" secondAttribute="leading" constant="10" id="CLU-Fg-2Ga"/>
+                                    <constraint firstAttribute="trailing" secondItem="52d-XS-ecm" secondAttribute="trailing" constant="15" id="GQs-z0-kiF"/>
+                                    <constraint firstItem="52d-XS-ecm" firstAttribute="bottom" secondItem="6iH-DA-WJR" secondAttribute="bottom" id="MBh-IA-3pS"/>
+                                    <constraint firstItem="6Wu-zj-uQC" firstAttribute="top" secondItem="8b6-ne-tc6" secondAttribute="top" id="bvf-dg-lQz"/>
+                                    <constraint firstItem="ZbR-jw-LlG" firstAttribute="leading" secondItem="8yd-OM-H0Z" secondAttribute="leading" id="c30-sa-nCJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZbR-jw-LlG" secondAttribute="bottom" id="dpW-ZY-wgx"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Wu-zj-uQC" secondAttribute="trailing" constant="15" id="eCr-Io-OAm"/>
+                                    <constraint firstItem="6Wu-zj-uQC" firstAttribute="bottom" secondItem="8b6-ne-tc6" secondAttribute="bottom" id="fXT-A1-ZAQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZbR-jw-LlG" secondAttribute="trailing" id="nzd-JA-1IO"/>
+                                    <constraint firstItem="ZbR-jw-LlG" firstAttribute="height" secondItem="8yd-OM-H0Z" secondAttribute="height" multiplier="1:7" id="rr3-jl-6YV"/>
+                                    <constraint firstItem="52d-XS-ecm" firstAttribute="top" secondItem="6iH-DA-WJR" secondAttribute="top" id="xOA-U1-muI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8yd-OM-H0Z" firstAttribute="centerX" secondItem="xfX-5s-Cca" secondAttribute="centerX" id="Q0H-TX-Gxz"/>
+                            <constraint firstItem="a8Z-gQ-Dvn" firstAttribute="trailing" secondItem="8yd-OM-H0Z" secondAttribute="trailing" constant="30" id="SOl-Os-yxC"/>
+                            <constraint firstItem="8yd-OM-H0Z" firstAttribute="height" secondItem="xfX-5s-Cca" secondAttribute="height" multiplier="2.5:6" id="W3B-YE-6Uh"/>
+                            <constraint firstItem="8yd-OM-H0Z" firstAttribute="centerY" secondItem="xfX-5s-Cca" secondAttribute="centerY" id="hyo-pB-IT3"/>
+                            <constraint firstItem="8yd-OM-H0Z" firstAttribute="leading" secondItem="a8Z-gQ-Dvn" secondAttribute="leading" constant="30" id="kFP-um-PPa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a8Z-gQ-Dvn"/>
+                    </view>
+                    <connections>
+                        <segue destination="Vah-vS-bMV" kind="presentation" identifier="FileOpenViewSegue" id="DdN-ft-nc2"/>
+                        <segue destination="W7c-e6-cnK" kind="presentation" identifier="FolderSettingViewSegue" id="mU6-pM-Sjv"/>
+                        <segue destination="D2s-fl-2K5" kind="presentation" identifier="DataNumberViewSegue" id="xIS-30-Pqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcS-86-AgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="151"/>
+        </scene>
+        <!--FileOpenView-->
+        <scene sceneID="8Yb-K4-yYG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FileOpenView" storyboardName="FileOpen" referencedIdentifier="FileOpenView" id="Vah-vS-bMV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFk-tt-gC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="-92"/>
+        </scene>
+        <!--FolderSettingView-->
+        <scene sceneID="TGu-hg-lAS">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FolderSettingView" storyboardName="FolderSetting" referencedIdentifier="FolderSettingView" id="W7c-e6-cnK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy3-58-2Cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="9"/>
+        </scene>
+        <!--DataNumberView-->
+        <scene sceneID="nsC-AK-QtL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DataNumberView" storyboardName="DataNumber" referencedIdentifier="DataNumberView" id="D2s-fl-2K5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zu7-Jb-lpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="117"/>
+        </scene>
+    </scenes>
+</document>

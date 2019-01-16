@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JRN-v1-JFE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MarkerSortViewController-->
+        <scene sceneID="ztV-ft-Jtx">
+            <objects>
+                <viewController storyboardIdentifier="MarkerSortView" title="MarkerSortViewController" id="JRN-v1-JFE" customClass="MarkerSortViewController" customModule="keisoku_njj200" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vcd-OK-VYM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJw-cG-c2x" userLabel="MarkerSortView">
+                                <rect key="frame" x="30" y="238" width="315" height="191"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ne-4S-M6n" userLabel="lblMarkerGroupID">
+                                        <rect key="frame" x="10" y="10" width="89" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マーカをソートします" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtB-GZ-VRh" userLabel="lblMarkerSort">
+                                        <rect key="frame" x="10" y="41.5" width="183.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va0-l8-5ZO" userLabel="rdoBtnAscending" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="83" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="dO1-eY-FPa"/>
+                                            <constraint firstAttribute="height" constant="20" id="dnf-3s-hJ1"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnAscendingTap:" destination="JRN-v1-JFE" eventType="touchUpInside" id="m3l-84-maY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昇順" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj5-3P-DyJ" userLabel="lblAscending">
+                                        <rect key="frame" x="60" y="83" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tH-Xm-uUe" userLabel="rdoBtnDescending" customClass="CustomRadioButton" customModule="keisoku_njj200" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="113" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="1IM-Ju-6Wp"/>
+                                            <constraint firstAttribute="height" constant="20" id="GzT-OM-lfd"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rdoBtnDescendingTap:" destination="JRN-v1-JFE" eventType="touchUpInside" id="dMK-VR-NXP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="降順" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTZ-bX-Kel" userLabel="lblDescending">
+                                        <rect key="frame" x="60" y="113" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HM-IK-Ex5" userLabel="borderTopLineFooter">
+                                        <rect key="frame" x="0.0" y="152" width="315" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="FBr-jb-i6w"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tau-r2-uak" userLabel="FooterBtnStackView">
+                                        <rect key="frame" x="0.0" y="152.5" width="315" height="38.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqI-I7-sYl" userLabel="btnCancel">
+                                                <rect key="frame" x="0.0" y="4" width="156" height="30"/>
+                                                <state key="normal" title="キャンセル">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelTap:" destination="JRN-v1-JFE" eventType="touchUpInside" id="RP0-Jb-pLR"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-GN-vFn" userLabel="borderMiddleLineFooter">
+                                                <rect key="frame" x="157.5" y="0.0" width="0.5" height="38.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="0.5" id="IwH-EH-yLb"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuT-nx-X1t" userLabel="btnOK">
+                                                <rect key="frame" x="159" y="4" width="156" height="30"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnOKTap:" destination="JRN-v1-JFE" eventType="touchUpInside" id="5Pt-El-ktA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BwM-GN-vFn" firstAttribute="height" secondItem="Tau-r2-uak" secondAttribute="height" id="H7p-yZ-Si7"/>
+                                            <constraint firstItem="RuT-nx-X1t" firstAttribute="width" secondItem="Tau-r2-uak" secondAttribute="width" multiplier="0.99:2" id="coN-bK-Yco"/>
+                                            <constraint firstItem="eqI-I7-sYl" firstAttribute="width" secondItem="Tau-r2-uak" secondAttribute="width" multiplier="0.99:2" id="xtW-pO-w7b"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7tH-Xm-uUe" firstAttribute="centerX" secondItem="va0-l8-5ZO" secondAttribute="centerX" id="3Yl-6Y-1HQ"/>
+                                    <constraint firstItem="CTZ-bX-Kel" firstAttribute="centerY" secondItem="7tH-Xm-uUe" secondAttribute="centerY" id="7KI-rD-SwU"/>
+                                    <constraint firstItem="3Ne-4S-M6n" firstAttribute="leading" secondItem="vJw-cG-c2x" secondAttribute="leading" constant="10" id="E13-o4-ba9"/>
+                                    <constraint firstItem="Tau-r2-uak" firstAttribute="height" secondItem="vJw-cG-c2x" secondAttribute="height" multiplier="1:5" id="ERf-6t-GYG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tau-r2-uak" secondAttribute="bottom" id="HgV-5o-hhk"/>
+                                    <constraint firstItem="yj5-3P-DyJ" firstAttribute="leading" secondItem="7tH-Xm-uUe" secondAttribute="trailing" constant="15" id="OjZ-jG-buB"/>
+                                    <constraint firstItem="yj5-3P-DyJ" firstAttribute="centerY" secondItem="va0-l8-5ZO" secondAttribute="centerY" id="P2W-OK-8ug"/>
+                                    <constraint firstItem="7tH-Xm-uUe" firstAttribute="top" secondItem="va0-l8-5ZO" secondAttribute="bottom" constant="10" id="Ss2-1S-1Y1"/>
+                                    <constraint firstItem="CTZ-bX-Kel" firstAttribute="leading" secondItem="7tH-Xm-uUe" secondAttribute="trailing" constant="15" id="XDG-lR-MZh"/>
+                                    <constraint firstItem="3Ne-4S-M6n" firstAttribute="top" secondItem="vJw-cG-c2x" secondAttribute="top" constant="10" id="aGb-J7-g4c"/>
+                                    <constraint firstAttribute="trailing" secondItem="6HM-IK-Ex5" secondAttribute="trailing" id="d0x-cK-NOm"/>
+                                    <constraint firstItem="jtB-GZ-VRh" firstAttribute="top" secondItem="3Ne-4S-M6n" secondAttribute="bottom" constant="10" id="hsw-sE-3MG"/>
+                                    <constraint firstItem="jtB-GZ-VRh" firstAttribute="leading" secondItem="vJw-cG-c2x" secondAttribute="leading" constant="10" id="l18-dG-kEA"/>
+                                    <constraint firstItem="Tau-r2-uak" firstAttribute="top" secondItem="6HM-IK-Ex5" secondAttribute="bottom" id="oaf-p4-HOv"/>
+                                    <constraint firstItem="Tau-r2-uak" firstAttribute="leading" secondItem="vJw-cG-c2x" secondAttribute="leading" id="qrP-kj-k6q"/>
+                                    <constraint firstItem="va0-l8-5ZO" firstAttribute="top" secondItem="jtB-GZ-VRh" secondAttribute="bottom" constant="20" id="sub-Lv-uOa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tau-r2-uak" secondAttribute="trailing" id="x2c-EB-2KV"/>
+                                    <constraint firstItem="va0-l8-5ZO" firstAttribute="leading" secondItem="vJw-cG-c2x" secondAttribute="leading" constant="25" id="x3d-Ii-xyJ"/>
+                                    <constraint firstItem="6HM-IK-Ex5" firstAttribute="leading" secondItem="vJw-cG-c2x" secondAttribute="leading" id="xTx-3O-nIk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vJw-cG-c2x" firstAttribute="height" secondItem="Vcd-OK-VYM" secondAttribute="height" multiplier="2:7" id="0Aq-13-rp5"/>
+                            <constraint firstItem="vJw-cG-c2x" firstAttribute="centerY" secondItem="Vcd-OK-VYM" secondAttribute="centerY" id="4aw-Jb-6ob"/>
+                            <constraint firstItem="vJw-cG-c2x" firstAttribute="centerX" secondItem="Vcd-OK-VYM" secondAttribute="centerX" id="G1z-oc-zwH"/>
+                            <constraint firstItem="6pa-YS-n9J" firstAttribute="trailing" secondItem="vJw-cG-c2x" secondAttribute="trailing" constant="30" id="O0R-0P-4PW"/>
+                            <constraint firstItem="vJw-cG-c2x" firstAttribute="leading" secondItem="6pa-YS-n9J" secondAttribute="leading" constant="30" id="W7x-U9-5PS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6pa-YS-n9J"/>
+                    </view>
+                    <connections>
+                        <outlet property="rdoBtnAscending" destination="va0-l8-5ZO" id="QLA-q4-aMS"/>
+                        <outlet property="rdoBtnDescending" destination="7tH-Xm-uUe" id="mdF-TP-vv6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWE-ev-Vja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="125"/>
+        </scene>
+    </scenes>
+</document>
