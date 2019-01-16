@@ -37,6 +37,7 @@
 		18B6612421DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6612321DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift */; };
 		18D5E7D921E898C300926885 /* MarkerDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5E7D821E898C300926885 /* MarkerDetailCollectionViewCell.swift */; };
 		18D5E7DB21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5E7DA21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift */; };
+		1F9650D421EF337700BD6E9A /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F9650D321EF337700BD6E9A /* test.c */; };
 		3F55ADE621C0B12A005B7D21 /* MarkerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADE521C0B12A005B7D21 /* MarkerSettingViewController.swift */; };
 		3F55ADEA21C0B42F005B7D21 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADE921C0B42F005B7D21 /* Common.swift */; };
 		3F55ADEC21C0BDB8005B7D21 /* ExportSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55ADEB21C0BDB8005B7D21 /* ExportSettingViewController.swift */; };
@@ -80,6 +81,9 @@
 		18B6612321DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerCollectionViewLayout.swift; sourceTree = "<group>"; };
 		18D5E7D821E898C300926885 /* MarkerDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		18D5E7DA21E89AAA00926885 /* MarkerDetailCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerDetailCollectionViewLayout.swift; sourceTree = "<group>"; };
+		1F9650D121EF337700BD6E9A /* keisoku-njj200-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "keisoku-njj200-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F9650D221EF337700BD6E9A /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		1F9650D321EF337700BD6E9A /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		3F55ADE521C0B12A005B7D21 /* MarkerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerSettingViewController.swift; sourceTree = "<group>"; };
 		3F55ADE921C0B42F005B7D21 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3F55ADEB21C0BDB8005B7D21 /* ExportSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSettingViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,16 @@
 			path = CollectionViewClass;
 			sourceTree = "<group>";
 		};
+		1F9650D021EF336100BD6E9A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1F9650D221EF337700BD6E9A /* test.h */,
+				1F9650D321EF337700BD6E9A /* test.c */,
+				1F9650D121EF337700BD6E9A /* keisoku-njj200-Bridging-Header.h */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		3F8E307B21A7E2C700FBD223 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +152,7 @@
 		3F8E308621A7E2C700FBD223 /* keisoku-njj200 */ = {
 			isa = PBXGroup;
 			children = (
+				1F9650D021EF336100BD6E9A /* New Group */,
 				18465F3521EB63C500FD52CA /* CollectionViewClass */,
 				3FADBEFC21BF74DE006A3A73 /* Assets */,
 				3FADBEFB21BF6ED2006A3A73 /* CommonClass */,
@@ -242,6 +257,7 @@
 				TargetAttributes = {
 					3F8E308321A7E2C700FBD223 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -306,6 +322,7 @@
 				3F55ADEC21C0BDB8005B7D21 /* ExportSettingViewController.swift in Sources */,
 				1841E13321ECD0F90031FA9B /* CustomPickerView.swift in Sources */,
 				18B6612421DDFE4A00B8DA30 /* MarkerCollectionViewLayout.swift in Sources */,
+				1F9650D421EF337700BD6E9A /* test.c in Sources */,
 				18465F3221EAFADA00FD52CA /* FileListCollectionViewCell.swift in Sources */,
 				3F55ADE621C0B12A005B7D21 /* MarkerSettingViewController.swift in Sources */,
 				18465F3421EAFB4E00FD52CA /* FileListCollectionViewLayout.swift in Sources */,
@@ -466,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THA65K2T56;
@@ -478,6 +496,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.kgs-inc.keisoku-njj200";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "keisoku-njj200/New Group/keisoku-njj200-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -487,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THA65K2T56;
@@ -499,6 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.kgs-inc.keisoku-njj200";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "keisoku-njj200/New Group/keisoku-njj200-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
